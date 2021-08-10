@@ -27,7 +27,7 @@
         android:layout_marginRight="24dp"
         android:gravity="center"
         android:inputType="textMultiLine"
-        android:text="You can manage classes from this feature.You should provide teachers name to view relevent record"
+        android:text="You can manage classes from this feature.You should provide teachers name to view relevent records"
         android:textAlignment="center"
         android:textColor="#828282"
 
