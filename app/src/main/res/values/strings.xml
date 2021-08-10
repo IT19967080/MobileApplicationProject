@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Madproject</string>
+    <string name="emp_title">Teacher Salary Management System</string>
+    <string name="rteachername">Teacher Name</string>
+    <string name="teachername" />
+    <string name="rTeacher_sal">Teacher Salary</string>
+    <string name="rcompany_profit">Company Profit</string>
+    <string name="rteacher_netsal">Net Salary</string>
+    <string name="rbtn_1">OK</string>
+    <string name="rbtn_2">Clear</string>
+    <string name="rpbtn_1">Add</string>
+    <string name="rpbtn_2">View</string>
+    <string name="rpbtn_3">Update</string>
+    <string name="rpbtn_4">Delete</string>
+    <string name="rpbtn_intro">Continue</string>
+    <string name="dashboard_title">Nilwala Education</string>
+    <string name="dashboardhall">Hall Management</string>
+</resources>
