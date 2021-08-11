@@ -15,4 +15,9 @@
     <string name="rpbtn_intro">Continue</string>
     <string name="dashboard_title">Nilwala Education</string>
     <string name="dashboardhall">Hall Management</string>
+    <string name="btn_kbutton1">Add Teacher / Employee</string>
+    <string name="btn_kbutton2">View Teaachers / Employees</string>
+    <string name="btn_kback">Back</string>
+    <string name="btn_kview">View Teachers / Employees</string>
+    <string name="btn_kview1">View Teachers / Employees</string>
 </resources>
