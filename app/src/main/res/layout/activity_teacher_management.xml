@@ -5,6 +5,7 @@
     android:id="@+id/btn_kview"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFDFD"
     tools:context="@string/btn_kbutton2">
 
     <TextView

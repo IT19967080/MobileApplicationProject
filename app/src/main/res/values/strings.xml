@@ -30,4 +30,12 @@
     <string name="pt_kpwd3">Password</string>
     <string name="pt_kcompwd2">Confirm Password</string>
     <string name="btn_kcancel1">Cancel</string>
+    <string name="pt_kFullName">Full Name</string>
+    <string name="ph_num">Enter Number</string>
+    <string name="pt_mobNum">Enter Number</string>
+    <string name="pt_ksubject">Enter Subject</string>
+    <string name="pt_kidcard">Enter Number</string>
+    <string name="pt_kaddress">Enter Address</string>
+    <string name="btn_ksubmit">Submit</string>
+    <string name="btn_kback2">Back</string>
 </resources>
