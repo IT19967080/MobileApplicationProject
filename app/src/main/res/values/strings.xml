@@ -23,4 +23,11 @@
     <string name="pt_email1">Email</string>
     <string name="btn_klogin">Login</string>
     <string name="btn_ksignUp">Sign Up</string>
+    <string name="btn_kregister">Register</string>
+    <string name="pt_kfname">First Name</string>
+    <string name="pt_kllname" />
+    <string name="pt_kemail2">Email;</string>
+    <string name="pt_kpwd3">Password</string>
+    <string name="pt_kcompwd2">Confirm Password</string>
+    <string name="btn_kcancel1">Cancel</string>
 </resources>

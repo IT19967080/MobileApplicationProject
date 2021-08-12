@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundreg"
+    tools:context=".Registration_page">
+
+    <TextView
+        android:id="@+id/tv_kregister"
+        android:layout_width="144dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="134dp"
+        android:layout_marginLeft="134dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Register"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_kcancel1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_kfirstName"
+        android:layout_width="220dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:text="First Name"
+        android:textColor="#101010"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_kregister" />
+
+    <TextView
+        android:id="@+id/tv_kLastName"
+        android:layout_width="220dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:text="Last Name"
+        android:textColor="#0C0C0C"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pt_kfname" />
+
+    <TextView
+        android:id="@+id/tv_kemail2"
+        android:layout_width="220dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:text="Email"
+        android:textColor="#070707"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pt_klname" />
+
+    <TextView
+        android:id="@+id/tv_comPwd"
+        android:layout_width="220dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:text="Confirm Password"
+        android:textColor="#070707"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pt_kpwd3" />
+
+    <TextView
+        android:id="@+id/tv_pwd2"
+        android:layout_width="220dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:text="Password"
+        android:textColor="#090909"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pt_kemail2" />
+
+    <Button
+        android:id="@+id/btn_kregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/btn_kregister"
+        android:text="Register"
+        android:textColor="#0587AE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pt_kcompwd2" />
+
+    <EditText
+        android:id="@+id/pt_kfname"
+        android:layout_width="219dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="@string/pt_kfname"
+        android:inputType="textPersonName"
+        android:text="Enter First Name"
+        android:textColor="#F8F5F5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_kfirstName" />
+
+    <EditText
+        android:id="@+id/pt_klname"
+        android:layout_width="219dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="@string/pt_kllname"
+        android:inputType="textPersonName"
+        android:text="Enter Last Name"
+        android:textColor="#F8F5F5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_kLastName" />
+
+    <EditText
+        android:id="@+id/pt_kemail2"
+        android:layout_width="219dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="@string/pt_kemail2"
+        android:inputType="textPersonName"
+        android:text="Enter Email"
+        android:textColor="#FAF6F6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_kemail2" />
+
+    <EditText
+        android:id="@+id/pt_kpwd3"
+        android:layout_width="219dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="@string/pt_kpwd3"
+        android:inputType="textPersonName"
+        android:text="Enter Password"
+        android:textColor="#F8F3F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pwd2" />
+
+    <EditText
+        android:id="@+id/pt_kcompwd2"
+        android:layout_width="219dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="@string/pt_kcompwd2"
+        android:inputType="textPersonName"
+        android:text="Confirm Above Password"
+        android:textColor="#FBF8F8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_comPwd" />
+
+    <Button
+        android:id="@+id/btn_kcancel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/btn_kcancel1"
+        android:text="Cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_kregister"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
