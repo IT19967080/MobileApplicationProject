@@ -20,4 +20,7 @@
     <string name="btn_kback">Back</string>
     <string name="btn_kview">View Teachers / Employees</string>
     <string name="btn_kview1">View Teachers / Employees</string>
+    <string name="pt_email1">Email</string>
+    <string name="btn_klogin">Login</string>
+    <string name="btn_ksignUp">Sign Up</string>
 </resources>
