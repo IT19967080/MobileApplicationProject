@@ -9,16 +9,42 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Madproject">
-        <activity android:name=".Hall_View_Hdata"></activity>
-        <activity android:name=".Hall_Gallery"></activity>
-        <activity android:name=".Hall_Add">
+
+
+        <activity android:name=".Hall_View_DE">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Hall_Home" />
+
+
+        <activity android:name=".Hall_view_Tdata">
+
+        </activity>
+
+
+        <activity android:name=".Hall_View_Hdata">
+
+        </activity>
+
+
+        <activity android:name=".Hall_Gallery" >
+
+        </activity>
+
+
+        <activity android:name=".Hall_Add" >
+
+        </activity>
+
+
+        <activity android:name=".Hall_Home" >
+
+        </activity>
+
+
         <activity android:name=".Student_Managment" />
         <activity android:name=".ClassIntroActivity" />
         <activity android:name=".incomecal" />
