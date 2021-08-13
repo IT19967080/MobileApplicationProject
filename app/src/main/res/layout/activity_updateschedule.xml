@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_background"
+    android:background="@drawable/back1"
     tools:context=".updateschedule">
 
 
@@ -113,6 +113,7 @@
         android:layout_marginLeft="24dp"
         android:layout_marginTop="80dp"
         android:text="@string/rpbtn_3"
+        android:textColor="@color/black"
         app:backgroundTint="@color/colorPrimaryDark"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
@@ -125,6 +126,7 @@
         android:layout_marginLeft="24dp"
         android:layout_marginTop="80dp"
         android:text="@string/rpbtn_4"
+        android:textColor="@color/black"
         app:backgroundTint="@color/colorPrimaryDark"
         app:layout_constraintStart_toEndOf="@+id/button3"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
@@ -225,6 +227,7 @@
             android:text="Schedule Management"
             android:textColor="@color/colorWhite"
             android:textSize="24sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -253,7 +256,8 @@
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         android:text="@string/rpbtn_5"
-        app:backgroundTint="@color/colorPrimaryDark"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/teal_200"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/button4"

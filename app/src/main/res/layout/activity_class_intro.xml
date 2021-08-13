@@ -5,7 +5,7 @@
     android:id="@+id/text"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_background"
+    android:background="@drawable/back1"
     tools:context=".ClassIntroActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -68,7 +68,7 @@
         android:layout_height="61dp"
         android:layout_marginTop="40dp"
         android:text="@string/rpbtn_intro"
-        app:backgroundTint="?attr/colorPrimaryVariant"
+        app:backgroundTint="@color/gold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
