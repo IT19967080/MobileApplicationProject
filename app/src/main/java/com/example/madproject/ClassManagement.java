@@ -3,6 +3,7 @@ package com.example.madproject;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.WindowManager;
 
 public class ClassManagement extends AppCompatActivity {
 
@@ -10,5 +11,6 @@ public class ClassManagement extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_class_management);
+
     }
 }
