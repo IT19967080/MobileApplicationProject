@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/wp4"
     tools:context=".addStudent">
 
     <TextView
@@ -25,32 +26,32 @@
         android:layout_marginLeft="16dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintBaseline_toBaselineOf="@+id/stu_add_fname1"
         app:layout_constraintStart_toEndOf="@+id/stu_add_fname1" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/stu_add_layout"
+        android:id="@+id/stu_about_layout"
         android:layout_width="409dp"
         android:layout_height="72dp"
-        android:background="@color/gold"
+        android:background="@color/design_default_color_error"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
-            android:id="@+id/stu_add_back"
+            android:id="@+id/stu_about_back"
             android:layout_width="55dp"
             android:layout_height="46dp"
             android:layout_marginStart="5dp"
             android:layout_marginLeft="5dp"
+            android:background="@color/design_default_color_error"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/backarrow" />
 
         <TextView
-            android:id="@+id/stu_add_title"
+            android:id="@+id/stu_about_title"
             android:layout_width="220dp"
             android:layout_height="46dp"
             android:layout_marginStart="55dp"
@@ -61,7 +62,7 @@
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/stu_add_back"
+            app:layout_constraintStart_toEndOf="@+id/stu_about_back"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -78,7 +79,7 @@
         android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/stu_add_layout" />
+        app:layout_constraintTop_toBottomOf="@+id/stu_about_layout" />
 
     <TextView
         android:id="@+id/stu_add_fname1"
@@ -99,7 +100,6 @@
         android:layout_marginLeft="16dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintBaseline_toBaselineOf="@+id/stu_add_lname1"
         app:layout_constraintStart_toEndOf="@+id/stu_add_lname1" />
 

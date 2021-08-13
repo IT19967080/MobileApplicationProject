@@ -35,4 +35,10 @@
     <string name="c_stu_search2">Search</string>
     <string name="c_stu_delete2">DELETE</string>
     <string name="c_stu_viewandDelete">VIEW/DELETE STUDENT</string>
+    <string name="c_stu_profile">STUDENT PROFILE</string>
+    <string name="c_static_aboutus">ABOUT US</string>
+    <string name="c_about_mission">Our Mission</string>
+    <string name="c_about_vision">Our Vision</string>
+    <string name="c_about_vision_paragraph">Our vision at Nilwala Education is to empower students to acquire, demonstrate, articulate and value knowledge and skills that will support them, as life-long learners, to participate in and contribute to the global world and practise the core values of the insititute: respect, tolerance and inclusion, and excellence.</string>
+    <string name="c_about_mission_paragraph">Is to enable all learners access to learning through the provision of differentiated, in-depth and cohesive learning programs aligned to year level content and achievement standards informed by the Australian curriculum highly effective teachers, focussed on improving student outcomes, through their commitment to ongoing professional development, quality teaching, evidence based practices, coaching and mentoring and collaboration a quality inclusive learning environment that is responsive to student voice enriching, engaging resources opportunities for community and parents to participate in learning and decision making partnerships</string>
 </resources>

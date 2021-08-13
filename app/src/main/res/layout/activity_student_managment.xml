@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/wp4"
     tools:context=".Student_Managment">
 
     <TextView
@@ -21,22 +22,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/stu_layout" />
-
-    <Button
-        android:id="@+id/stu_button1"
-        android:layout_width="191dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="180dp"
-        android:layout_marginRight="180dp"
-        android:text="@string/c_stu_deletebutton"
-        app:backgroundTint="@color/design_default_color_error"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/stu_button" />
 
     <Button
         android:id="@+id/stu_button"
@@ -60,15 +45,15 @@
         android:layout_height="53dp"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="180dp"
         android:layout_marginRight="180dp"
-        android:text="@string/c_stu_viewbutton"
+        android:text="@string/c_stu_viewandDelete"
         app:backgroundTint="@color/design_default_color_error"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/stu_button1" />
+        app:layout_constraintTop_toBottomOf="@+id/stu_button" />
 
     <ImageView
         android:id="@+id/stu_image1"
@@ -78,17 +63,17 @@
         android:layout_marginBottom="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/stu_button2"
-        app:layout_constraintVertical_bias="0.504"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/c_student" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/stu_layout"
         android:layout_width="413dp"
         android:layout_height="72dp"
-        android:background="@color/gold"
+        android:background="@color/design_default_color_error"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -111,6 +96,7 @@
             android:layout_height="46dp"
             android:layout_marginStart="5dp"
             android:layout_marginLeft="5dp"
+            android:background="@color/design_default_color_error"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
