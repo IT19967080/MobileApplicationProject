@@ -10,31 +10,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Madproject">
         <activity
+            android:name=".updatetea"
+            android:exported="true" />
+        <activity
             android:name=".view_teachers"
-            android:exported="true" >
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".Add_Teacher"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".Registration_page"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".login_page"
             android:exported="true" />
+
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
+
         <activity
             android:name=".TeacherManagement"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity android:name=".ClassIntroActivity" />
         <activity android:name=".incomecal" />
         <activity android:name=".ClassManagement" />
