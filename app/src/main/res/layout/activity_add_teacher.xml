@@ -10,15 +10,14 @@
 
     <TextView
         android:id="@+id/tv_kadd"
-        android:layout_width="362dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="29dp"
+        android:layout_width="347dp"
+        android:layout_height="39dp"
         android:text="Add Teacher / Employee"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="0.375"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/cons_klayout1" />
 
     <RadioGroup
         android:id="@+id/rg_TeacherEmp"
@@ -247,25 +246,46 @@
         android:text="Submit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pt_kaddress" />
+        app:layout_constraintTop_toBottomOf="@+id/pt_kaddress"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <Button
-        android:id="@+id/btn_kback2"
-        android:layout_width="80dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="200dp"
-        android:layout_marginLeft="200dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginBottom="5dp"
-        android:hint="@string/btn_kback2"
-        android:text="Back"
-        app:layout_constraintBottom_toTopOf="@+id/rg_TeacherEmp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cons_klayout1"
+        android:layout_width="411dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="1dp"
+        android:background="#2FB1EC"
+        app:layout_constraintBottom_toTopOf="@+id/tv_kadd"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tv_ktype"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_klaytopic"
+            android:layout_width="310dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="4dp"
+            android:text="Teacher / Employee Management"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="48dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_klaytopic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/backarrowk" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
