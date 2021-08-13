@@ -23,4 +23,16 @@
     <string name="c_stu_topic">Student Management</string>
     <string name="c_stu_addbutton">ADD STUDENT</string>
     <string name="c_stu_viewbutton">VIEW STUDENT</string>
+    <string name="c_stu_fname">First Name</string>
+    <string name="c_stu_lname">Last Name</string>
+    <string name="c_stu_gender">Gender</string>
+    <string name="c_stu_address">Address</string>
+    <string name="c_stu_number">Phone Number</string>
+    <string name="c_stu_paren_number">Parent/Guardian Number</string>
+    <string name="c_stu_submitbutton">Submit</string>
+    <string name="c_stu_deletebutton">DELETE STUDENT</string>
+    <string name="c_stu_search">Search the Student name</string>
+    <string name="c_stu_search2">Search</string>
+    <string name="c_stu_delete2">DELETE</string>
+    <string name="c_stu_viewandDelete">VIEW/DELETE STUDENT</string>
 </resources>

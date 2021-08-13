@@ -9,10 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Madproject">
-        <activity android:name=".Student_Managment"></activity>
-        <activity android:name=".ClassIntroActivity"></activity>
-        <activity android:name=".incomecal"></activity>
-        <activity android:name=".ClassManagement"></activity>
+        <activity android:name=".viewAndDeleteStudent"></activity>
+        <activity android:name=".deleteStudent" />
+        <activity android:name=".addStudent" />
+        <activity android:name=".Student_Managment" />
+        <activity android:name=".ClassIntroActivity" />
+        <activity android:name=".incomecal" />
+        <activity android:name=".ClassManagement" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

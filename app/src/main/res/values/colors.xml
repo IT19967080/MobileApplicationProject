@@ -12,6 +12,7 @@
 
     <color name="colorPurple">#4a148c</color>
     <color name="gold">#DD9830</color>
+    <color name="gray">#808080</color>
 
 
 </resources>
