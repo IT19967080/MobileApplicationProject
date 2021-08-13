@@ -20,4 +20,7 @@
     <string name="btn_kback">Back</string>
     <string name="btn_kview">View Teachers / Employees</string>
     <string name="btn_kview1">View Teachers / Employees</string>
+    <string name="c_stu_topic">Student Management</string>
+    <string name="c_stu_addbutton">ADD STUDENT</string>
+    <string name="c_stu_viewbutton">VIEW STUDENT</string>
 </resources>
