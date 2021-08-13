@@ -11,7 +11,7 @@
         android:id="@+id/constraintLayout"
         android:layout_width="414dp"
         android:layout_height="61dp"
-        android:background="@color/design_default_color_primary_variant"
+        android:background="@color/gold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
