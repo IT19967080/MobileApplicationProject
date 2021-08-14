@@ -61,7 +61,7 @@
         android:id="@+id/textView8"
         android:layout_width="163dp"
         android:layout_height="38dp"
-        android:text="Hall Name"
+        android:text="Hall ID"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -76,6 +76,7 @@
         android:layout_width="208dp"
         android:layout_height="42dp"
         android:ems="10"
+        android:hint="@string/N_H_hid"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -103,6 +104,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="@string/N_H_hcapacity"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -126,13 +128,13 @@
             android:id="@+id/radioButton19"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="A/C" />
+            android:text="@string/N_H_hrac" />
 
         <RadioButton
             android:id="@+id/radioButton20"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Non A/C" />
+            android:text="@string/N_H_hrnonac" />
     </RadioGroup>
 
     <TextView
@@ -154,6 +156,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="@string/N_H_hmanager"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -181,6 +184,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="@string/N_H_hteacher"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -193,7 +197,8 @@
         android:id="@+id/button7"
         android:layout_width="119dp"
         android:layout_height="65dp"
-        android:text="Add Hall"
+        android:text="@string/N_H_hadd"
+        app:backgroundTint="@color/purple_700"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"

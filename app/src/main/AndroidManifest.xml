@@ -11,6 +11,20 @@
         android:theme="@style/Theme.Madproject">
 
 
+        <activity android:name=".Hall_Main_Sign">
+
+        </activity>
+
+
+        <activity android:name=".Hall_View_TDE">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
         <activity android:name=".Hall_View_DE">
 
         </activity>
@@ -26,21 +40,17 @@
         </activity>
 
 
-        <activity android:name=".Hall_Gallery" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-
-        <activity android:name=".Hall_Add" >
+        <activity android:name=".Hall_Gallery">
 
         </activity>
 
 
-        <activity android:name=".Hall_Home" >
+        <activity android:name=".Hall_Add">
+
+        </activity>
+
+
+        <activity android:name=".Hall_Home">
 
         </activity>
 

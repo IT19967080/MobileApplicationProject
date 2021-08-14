@@ -5,16 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.WindowManager;
 
-public class Hall_Home extends AppCompatActivity {
+public class Hall_Main_Sign extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hall_home);
+        setContentView(R.layout.activity_hall_main_sign);
 
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();  //this line hides the action bar
-        setContentView(R.layout.activity_hall_home);
-
+        setContentView(R.layout.activity_hall_main_sign);
     }
 }

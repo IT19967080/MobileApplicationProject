@@ -7,24 +7,63 @@
     android:background="@drawable/b7"
     tools:context=".Hall_view_Tdata">
 
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="71dp"
-        android:layout_height="65dp"
+    <EditText
+        android:id="@+id/editTextTextPersonName23"
+        android:layout_width="338dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:hint="@string/N_H_ht5"
+        android:inputType="textPersonName"
+        android:text="     MBN 006"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintHorizontal_bias="0.397"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.865"
-        app:srcCompat="@drawable/addbutton2" />
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.719" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName22"
+        android:layout_width="338dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:hint="@string/N_H_ht4"
+        android:inputType="textPersonName"
+        android:text="     RBN 012"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.397"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.622" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName21"
+        android:layout_width="338dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:hint="@string/N_H_ht3"
+        android:inputType="textPersonName"
+        android:text="     JBN 003"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.397"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.527" />
 
     <EditText
         android:id="@+id/editTextTextPersonName19"
         android:layout_width="338dp"
         android:layout_height="59dp"
         android:ems="10"
+        android:hint="@string/N_H_ht1"
         android:inputType="textPersonName"
+        android:text="     MBN 045"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.397"
@@ -37,52 +76,28 @@
         android:layout_width="338dp"
         android:layout_height="59dp"
         android:ems="10"
+        android:hint="@string/N_H_ht2"
         android:inputType="textPersonName"
+        android:text="     GBN 022"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.397"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/constraintLayout"
-        app:layout_constraintVertical_bias="0.429" />
+        app:layout_constraintVertical_bias="0.433" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName21"
-        android:layout_width="338dp"
-        android:layout_height="59dp"
-        android:ems="10"
-        android:inputType="textPersonName"
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="71dp"
+        android:layout_height="65dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.397"
+        app:layout_constraintHorizontal_bias="0.87"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
-        app:layout_constraintVertical_bias="0.52" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName22"
-        android:layout_width="338dp"
-        android:layout_height="59dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.397"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
-        app:layout_constraintVertical_bias="0.614" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName23"
-        android:layout_width="338dp"
-        android:layout_height="59dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.397"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
-        app:layout_constraintVertical_bias="0.703" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.865"
+        app:srcCompat="@drawable/addbutton2" />
 
     <TextView
         android:id="@+id/textView29"
