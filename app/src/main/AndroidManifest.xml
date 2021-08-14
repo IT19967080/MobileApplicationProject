@@ -10,18 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Madproject">
         <activity android:name=".update_teacher">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
         </activity>
         <activity android:name=".view_teachers" >
 
 
         </activity>
-        <activity android:name=".Add_Teacher" ></activity>
-        <activity android:name=".Registration_page" >
+        <activity android:name=".Add_Teacher" >
 
+        </activity>
+        <activity android:name=".Registration_page" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".login_page">
 
