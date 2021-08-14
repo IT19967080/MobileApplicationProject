@@ -114,7 +114,7 @@
         android:layout_marginTop="80dp"
         android:text="@string/rpbtn_3"
         android:textColor="@color/black"
-        app:backgroundTint="@color/colorPrimaryDark"
+        app:backgroundTint="@color/gold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
@@ -127,7 +127,7 @@
         android:layout_marginTop="80dp"
         android:text="@string/rpbtn_4"
         android:textColor="@color/black"
-        app:backgroundTint="@color/colorPrimaryDark"
+        app:backgroundTint="@color/gold"
         app:layout_constraintStart_toEndOf="@+id/button3"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
 
@@ -257,7 +257,7 @@
         android:layout_marginRight="24dp"
         android:text="@string/rpbtn_5"
         android:textColor="@color/black"
-        app:backgroundTint="@color/teal_200"
+        app:backgroundTint="@color/gold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/button4"

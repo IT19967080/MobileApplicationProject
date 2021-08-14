@@ -122,7 +122,7 @@
         android:layout_marginLeft="120dp"
         android:layout_marginTop="68dp"
         android:text="@string/rpbtn_1"
-        app:backgroundTint="@color/colorPrimaryDark"
+        app:backgroundTint="@color/gold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
@@ -134,7 +134,7 @@
         android:layout_marginLeft="24dp"
         android:layout_marginTop="68dp"
         android:text="@string/rpbtn_2"
-        app:backgroundTint="@color/colorPrimaryDark"
+        app:backgroundTint="@color/gold"
         app:layout_constraintStart_toEndOf="@+id/button3"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
 
