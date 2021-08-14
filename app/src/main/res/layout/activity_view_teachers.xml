@@ -11,7 +11,9 @@
         android:id="@+id/constraintLayout3"
         android:layout_width="412dp"
         android:layout_height="64dp"
+        android:layout_marginBottom="2dp"
         android:background="#11B5CA"
+        app:layout_constraintBottom_toTopOf="@+id/tv_kview2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,8 +23,8 @@
             android:id="@+id/tv_klaytopic4"
             android:layout_width="310dp"
             android:layout_height="37dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginLeft="32dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
@@ -40,12 +42,13 @@
             android:id="@+id/imageView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:layout_marginLeft="4dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginLeft="28dp"
             android:layout_marginTop="2dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.416"
             app:srcCompat="@drawable/backarrowk" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -204,7 +207,7 @@
 
     <TextView
         android:id="@+id/textView25"
-        android:layout_width="40dp"
+        android:layout_width="50dp"
         android:layout_height="20dp"
         android:layout_marginTop="17dp"
         android:layout_marginEnd="19dp"
@@ -270,7 +273,10 @@
         android:layout_marginStart="80dp"
         android:layout_marginLeft="80dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
         android:text="galle"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView30"
         app:layout_constraintTop_toBottomOf="@+id/textView25" />
 </androidx.constraintlayout.widget.ConstraintLayout>

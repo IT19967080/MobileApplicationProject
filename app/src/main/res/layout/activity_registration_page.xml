@@ -96,7 +96,7 @@
         android:hint="@string/btn_kregister"
         android:text="Register"
         android:textColor="#010B0E"
-        app:backgroundTint="#03A9F4"
+        app:backgroundTint="#00BCD4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
