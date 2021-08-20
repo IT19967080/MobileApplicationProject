@@ -9,19 +9,19 @@
 
     <TextView
         android:id="@+id/logo"
-        android:layout_width="303dp"
-        android:layout_height="53dp"
+        android:layout_width="201dp"
+        android:layout_height="51dp"
         android:layout_marginTop="32dp"
         android:layout_marginBottom="16dp"
-        android:text="Manage Schedule"
+        android:text="Add Schedules"
         android:textColor="@color/black"
-        android:textSize="34sp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.126" />
+        app:layout_constraintVertical_bias="0.151" />
 
     <EditText
         android:id="@+id/teachername"
@@ -33,7 +33,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
-        android:hint="@string/rschedule_teacherID"
+        android:hint="@string/rschedule_classID"
         android:inputType="textPersonName"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
@@ -50,7 +50,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
-        android:hint="@string/rschedule_subject"
+        android:hint="@string/rschedule_teachername"
         android:inputType="textPersonName"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
@@ -116,27 +116,28 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="98dp"
+        android:layout_width="110dp"
         android:layout_height="52dp"
-        android:layout_marginStart="120dp"
-        android:layout_marginLeft="120dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginTop="80dp"
         android:text="@string/rpbtn_1"
-        app:backgroundTint="@color/gold"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/colourgreen"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="98dp"
+        android:layout_width="110dp"
         android:layout_height="52dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="68dp"
         android:text="@string/rpbtn_2"
-        app:backgroundTint="@color/gold"
-        app:layout_constraintStart_toEndOf="@+id/button3"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+        android:textColor="@color/black"
+        app:backgroundTint="@color/colourgreen"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button3"
+        app:layout_constraintStart_toEndOf="@+id/button3" />
 
     <TextView
         android:id="@+id/textView"
@@ -146,9 +147,9 @@
         android:layout_marginLeft="24dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:text="Teacher ID"
+        android:text="Class ID"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="19sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/teachername"
         app:layout_constraintEnd_toStartOf="@+id/teachername"
         app:layout_constraintHorizontal_bias="0.348"
@@ -162,9 +163,9 @@
         android:layout_marginLeft="24dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:text="Subject"
+        android:text="Teacher Name"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="19sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextTextPersonName"
         app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName"
         app:layout_constraintHorizontal_bias="0.666"
@@ -180,7 +181,7 @@
         android:layout_marginRight="16dp"
         android:text="Class Day"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="19sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextNumber"
         app:layout_constraintEnd_toStartOf="@+id/editTextNumber"
         app:layout_constraintStart_toStartOf="parent" />
@@ -195,7 +196,7 @@
         android:layout_marginRight="16dp"
         android:text="Duration"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="19sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextNumber2"
         app:layout_constraintEnd_toStartOf="@+id/editTextNumber2"
         app:layout_constraintStart_toStartOf="parent" />
@@ -217,9 +218,9 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
-        android:layout_width="409dp"
-        android:layout_height="80dp"
-        android:background="@color/gold"
+        android:layout_width="417dp"
+        android:layout_height="82dp"
+        android:background="@color/colourgreen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -232,7 +233,7 @@
             android:layout_marginEnd="36dp"
             android:layout_marginRight="36dp"
             android:text="Schedule Management"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/black"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

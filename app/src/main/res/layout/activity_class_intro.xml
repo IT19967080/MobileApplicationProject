@@ -10,9 +10,9 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
-        android:layout_width="409dp"
-        android:layout_height="80dp"
-        android:background="@color/gold"
+        android:layout_width="413dp"
+        android:layout_height="82dp"
+        android:background="@color/lightgreen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -25,7 +25,7 @@
             android:layout_marginEnd="36dp"
             android:layout_marginRight="36dp"
             android:text="Schedule Mangement"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/black"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -53,7 +53,7 @@
         android:layout_marginRight="24dp"
         android:gravity="center"
         android:inputType="textMultiLine"
-        android:text="You can manage classes from this feature.You should provide teachers name to view relevent records"
+        android:text="You can manage classes from this feature.You should provide Class ID to view existing records"
         android:textAlignment="center"
 
         android:textColor="@color/black"
@@ -67,8 +67,9 @@
         android:layout_width="152dp"
         android:layout_height="61dp"
         android:layout_marginTop="40dp"
-        android:text="@string/rpbtn_intro"
-        app:backgroundTint="@color/gold"
+        android:text="@string/rschedule_btn_intro"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/colourgreen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"

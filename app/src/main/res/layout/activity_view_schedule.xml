@@ -9,9 +9,9 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
-        android:layout_width="409dp"
-        android:layout_height="80dp"
-        android:background="@color/gold"
+        android:layout_width="411dp"
+        android:layout_height="84dp"
+        android:background="@color/lightgreen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -23,7 +23,7 @@
             android:layout_marginEnd="36dp"
             android:layout_marginRight="36dp"
             android:text="Schedule Management"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/black"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -43,31 +43,31 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+
     <TextView
         android:id="@+id/logo"
-        android:layout_width="341dp"
-        android:layout_height="72dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="195dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="50dp"
         android:layout_marginBottom="16dp"
-        android:text="Schedules"
+        android:text="View Schedules"
         android:textColor="@color/black"
-        android:textSize="34sp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.657"
+        app:layout_constraintHorizontal_bias="0.203"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.127" />
-
+        app:layout_constraintVertical_bias="0.132" />
 
     <TextView
         android:id="@+id/textView18"
-        android:layout_width="306dp"
-        android:layout_height="44dp"
+        android:layout_width="322dp"
+        android:layout_height="38dp"
         android:layout_marginStart="44dp"
         android:layout_marginLeft="44dp"
         android:layout_marginTop="24dp"
-        android:text="T001        history      Monday       2        2pm"
+        android:text="MC001        history      Monday       2        2pm"
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -75,12 +75,12 @@
 
     <TextView
         android:id="@+id/textView19"
-        android:layout_width="318dp"
-        android:layout_height="46dp"
+        android:layout_width="322dp"
+        android:layout_height="38dp"
         android:layout_marginStart="44dp"
         android:layout_marginLeft="44dp"
         android:layout_marginTop="8dp"
-        android:text="T002        Physics     Sunday       2.5     10am"
+        android:text="GC001        Physics     Sunday       2.5     10am"
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
