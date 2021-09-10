@@ -11,7 +11,10 @@
         android:id="@+id/stu_view_Layout"
         android:layout_width="413dp"
         android:layout_height="72dp"
-        android:background="@color/design_default_color_error">
+        android:background="@color/design_default_color_error"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/stu_view_back"
@@ -61,7 +64,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="15dp"
         android:text="@string/c_stu_paren_number"
-        android:textSize="10sp"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/stu_pro_number1" />
 
@@ -190,10 +193,22 @@
         android:id="@+id/stu_pro_delete_button"
         android:layout_width="139dp"
         android:layout_height="66dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
         android:text="@string/c_stu_delete2"
         app:backgroundTint="@color/design_default_color_error"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/stu_pro_delete_button2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/stu_pro_delete_button2"
+        android:layout_width="139dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/c_stu_Update"
+        app:backgroundTint="@color/design_default_color_error"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/stu_pro_parent_number1" />
 </androidx.constraintlayout.widget.ConstraintLayout>
