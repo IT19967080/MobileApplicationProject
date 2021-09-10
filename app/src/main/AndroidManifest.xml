@@ -40,12 +40,53 @@
         <activity android:name=".TeacherManagement" />
         <activity android:name=".mainHall" />
         <activity android:name=".studentProfile">
+
+
+        <activity android:name=".Hall_Main_Sign">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+        <activity android:name=".Hall_View_TDE">
+
+        </activity>
+
+
+        <activity android:name=".Hall_View_DE">
+
+        </activity>
+
+
+        <activity android:name=".Hall_view_Tdata">
+
+        </activity>
+
+
+        <activity android:name=".Hall_View_Hdata">
+
+        </activity>
+
+
+        <activity android:name=".Hall_Gallery">
+
+        </activity>
+
+
+        <activity android:name=".Hall_Add">
+
+        </activity>
+
+
+        <activity android:name=".Hall_Home">
+
+        </activity>
+
+
+
     </application>
 
 </manifest>

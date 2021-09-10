@@ -76,6 +76,39 @@
         enriching, engaging resources opportunities for community and parents to participate in
         learning and decision making partnerships</string>
     <string name="c_stu_Update">Edit</string>
+
+    <string name="N_H_hid">enter hall id</string>
+    <string name="N_H_hadd">Add Hall</string>
+    <string name="N_H_hcapacity">capacity</string>
+    <string name="N_H_hmanager">enter manager name</string>
+    <string name="N_H_hteacher">enter teacher name</string>
+    <string name="N_H_hrac">A/C</string>
+    <string name="N_H_hrnonac">Non A/C</string>
+    <string name="N_H_haddhall">ADD HALL</string>
+    <string name="N_H_hviewhall">VIEW HALL DETAILS</string>
+    <string name="N_H_havailableteacher">AVAILABLE TEACHER</string>
+    <string name="N_H_hlogin">LOGIN</string>
+    <string name="N_H_hsignup">SIGNUP</string>
+    <string name="N_H_hhviewid">"    MBN 045"</string>
+    <string name="H_N_hhviewcapacity">"    1200"</string>
+    <string name="N_H_hhview">"    A/C"</string>
+    <string name="N_H_hhviewmanager">"    M.D Perera"</string>
+    <string name="N_H_hhviewteacher">"        K.Gayan / H.Kanishka"</string>
+    <string name="N_H_hhupdate">UPDATE</string>
+    <string name="N_H_hhdelete">DELETE</string>
+    <string name="N_H_hd1">"     MBN 045"</string>
+    <string name="N_H_hd2">"    GBN 022"</string>
+    <string name="N_H_hd3">"    JBN 003"</string>
+    <string name="N_H_hd4">"    RBN 012"</string>
+    <string name="N_H_hd5">"    MBN 006"</string>
+    <string name="N_H_hdhallnumber">"    5"</string>
+    <string name="N_H_ht1">"    MBN 045"</string>
+    <string name="N_H_ht2">"    GBN 022"</string>
+    <string name="N_H_ht3">"    JBN 003"</string>
+    <string name="N_H_ht4">"    RBN 012"</string>
+    <string name="N_H_ht5">"    MBN 006"</string>
+    <string name="N_H_htviewid">"    MBN 045"</string>
+    <string name="N_H_htviewteacher">"    K.Gayan / H.Kanishka"</string>
 </resources>
 
 

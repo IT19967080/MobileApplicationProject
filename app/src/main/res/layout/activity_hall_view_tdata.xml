@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b7"
+    tools:context=".Hall_view_Tdata">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName23"
+        android:layout_width="338dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:hint="@string/N_H_ht5"
+        android:inputType="textPersonName"
+        android:text="     MBN 006"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.397"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.719" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName22"
+        android:layout_width="338dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:hint="@string/N_H_ht4"
+        android:inputType="textPersonName"
+        android:text="     RBN 012"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.397"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.622" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName21"
+        android:layout_width="338dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:hint="@string/N_H_ht3"
+        android:inputType="textPersonName"
+        android:text="     JBN 003"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.397"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.527" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName19"
+        android:layout_width="338dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:hint="@string/N_H_ht1"
+        android:inputType="textPersonName"
+        android:text="     MBN 045"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.397"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.338" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName20"
+        android:layout_width="338dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:hint="@string/N_H_ht2"
+        android:inputType="textPersonName"
+        android:text="     GBN 022"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.397"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.433" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="71dp"
+        android:layout_height="65dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.865"
+        app:srcCompat="@drawable/addbutton2" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="293dp"
+        android:layout_height="42dp"
+        android:text="Available Teachers "
+        android:textColor="@color/homeC"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="414dp"
+        android:layout_height="61dp"
+        android:background="@color/design_default_color_primary_variant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="49dp"
+            android:layout_height="42dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.956"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.736"
+            app:srcCompat="@drawable/dmenu" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="252dp"
+            android:layout_height="35dp"
+            android:text="Teachers Details"
+            android:textColor="#FDFCFC"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageView19"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="44dp"
+            android:layout_height="42dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.043"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.736"
+            app:srcCompat="@drawable/backarrow" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
