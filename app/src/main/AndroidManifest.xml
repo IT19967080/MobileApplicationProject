@@ -33,24 +33,19 @@
         </activity>
         <activity android:name=".view_teachers" >
 
+        <activity android:name=".navigationDrawer"></activity>
+        <activity android:name=".aboutUs" />
+        <activity android:name=".addStudent" />
+        <activity android:name=".viewAndDeleteStudent" />
+        <activity android:name=".TeacherManagement" />
+        <activity android:name=".mainHall" />
+        <activity android:name=".studentProfile">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Add_Teacher" >
-
-        </activity>
-        <activity android:name=".Registration_page" >
-
-        </activity>
-        <activity android:name=".login_page">
-
-        </activity>
-        <activity android:name=".TeacherManagement">
-
-        </activity>
-
     </application>
 
 </manifest>

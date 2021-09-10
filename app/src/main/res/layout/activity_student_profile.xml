@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wp4"
+    tools:context=".studentProfile">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/stu_view_Layout"
+        android:layout_width="413dp"
+        android:layout_height="72dp"
+        android:background="@color/design_default_color_error"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/stu_view_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/backarrow" />
+
+        <TextView
+            android:id="@+id/stu_view_title"
+            android:layout_width="220dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginLeft="55dp"
+            android:text="@string/dashboard_title"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/stu_view_back"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/stu_pro_title"
+        android:layout_width="377dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/c_stu_profile"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stu_view_Layout" />
+
+    <TextView
+        android:id="@+id/stu_pro_parent_number1"
+        android:layout_width="111dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/c_stu_paren_number"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stu_pro_number1" />
+
+    <EditText
+        android:id="@+id/stu_pro_number2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintBaseline_toBaselineOf="@+id/stu_pro_number1"
+        app:layout_constraintStart_toEndOf="@+id/stu_pro_number1" />
+
+    <TextView
+        android:id="@+id/stu_pro_number1"
+        android:layout_width="111dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/c_stu_number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stu_pro_gender1" />
+
+    <TextView
+        android:id="@+id/stu_pro_gender1"
+        android:layout_width="111dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/c_stu_gender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stu_pro_address1" />
+
+    <EditText
+        android:id="@+id/stu_pro_address2"
+        android:layout_width="172dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        app:layout_constraintBaseline_toBaselineOf="@+id/stu_pro_address1"
+        app:layout_constraintStart_toEndOf="@+id/stu_pro_address1" />
+
+    <TextView
+        android:id="@+id/stu_pro_address1"
+        android:layout_width="111dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/c_stu_address"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stu_pro_lname1" />
+
+    <EditText
+        android:id="@+id/stu_pro_lname2"
+        android:layout_width="172dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/stu_pro_lname1"
+        app:layout_constraintStart_toEndOf="@+id/stu_pro_lname1" />
+
+    <TextView
+        android:id="@+id/stu_pro_fname1"
+        android:layout_width="111dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/c_stu_fname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stu_pro_title" />
+
+    <EditText
+        android:id="@+id/stu_pro_fname2"
+        android:layout_width="172dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/stu_pro_fname1"
+        app:layout_constraintStart_toEndOf="@+id/stu_pro_fname1" />
+
+    <TextView
+        android:id="@+id/stu_pro_lname1"
+        android:layout_width="111dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/c_stu_lname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stu_pro_fname1" />
+
+    <EditText
+        android:id="@+id/stu_pro_parent_number2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintBaseline_toBaselineOf="@+id/stu_pro_parent_number1"
+        app:layout_constraintStart_toEndOf="@+id/stu_pro_parent_number1" />
+
+    <EditText
+        android:id="@+id/stu_pro_gender2"
+        android:layout_width="107dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/stu_pro_gender1"
+        app:layout_constraintStart_toEndOf="@+id/stu_pro_gender1" />
+
+    <Button
+        android:id="@+id/stu_pro_delete_button"
+        android:layout_width="139dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:text="@string/c_stu_delete2"
+        app:backgroundTint="@color/design_default_color_error"
+        app:layout_constraintBaseline_toBaselineOf="@+id/stu_pro_delete_button2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/stu_pro_delete_button2"
+        android:layout_width="139dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/c_stu_Update"
+        app:backgroundTint="@color/design_default_color_error"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stu_pro_parent_number1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

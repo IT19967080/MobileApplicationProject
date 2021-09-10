@@ -44,6 +44,38 @@
     <string name="pt_kaddress">Enter Address</string>
     <string name="btn_ksubmit">Submit</string>
     <string name="btn_kback2">Back</string>
+    <string name="c_stu_topic">Student Management</string>
+    <string name="c_stu_addbutton">ADD STUDENT</string>
+    <string name="c_stu_viewbutton">VIEW STUDENT</string>
+    <string name="c_stu_fname">First Name</string>
+    <string name="c_stu_lname">Last Name</string>
+    <string name="c_stu_gender">Gender</string>
+    <string name="c_stu_address">Address</string>
+    <string name="c_stu_number">Phone Number</string>
+    <string name="c_stu_paren_number">Parent/Guardian Number</string>
+    <string name="c_stu_submitbutton">Submit</string>
+    <string name="c_stu_deletebutton">DELETE STUDENT</string>
+    <string name="c_stu_search">Search the Student name</string>
+    <string name="c_stu_search2">Search</string>
+    <string name="c_stu_delete2">DELETE</string>
+    <string name="c_stu_viewandDelete">VIEW/DELETE STUDENT</string>
+    <string name="c_stu_profile">STUDENT PROFILE</string>
+    <string name="c_static_aboutus">ABOUT US</string>
+    <string name="c_about_mission">Our Mission</string>
+    <string name="c_about_vision">Our Vision</string>
+    <string name="c_about_vision_paragraph">Our vision at Nilwala Education is to empower students
+        acquire, demonstrate, articulateand value knowledge and skills that will support them, as
+        to life-long learners, to participatein and contribute to the global world and practise the
+        core values of the insititute: respect,tolerance and inclusion, and excellence.</string>
+    <string name="c_about_mission_paragraph">Is to enable all learners access to learning through
+        the provision of differentiated, in-depthand cohesive learning programs aligned to year level
+        content and achievement standards informed by the Local curriculum highly effective teachers,
+        focussed on improving student outcomes, through their commitment to ongoing professional
+        development, quality teaching, evidence based practices, coaching and mentoring and
+        collaboration a quality inclusive learning environment that is responsive to student voice
+        enriching, engaging resources opportunities for community and parents to participate in
+        learning and decision making partnerships</string>
+    <string name="c_stu_Update">Edit</string>
 </resources>
 
 
