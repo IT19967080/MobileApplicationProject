@@ -5,15 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.WindowManager;
 
-public class ClassManagement extends AppCompatActivity {
+public class view_schedule extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_class_management);
+        setContentView(R.layout.activity_view_schedule);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();//this line hides the action bar
-        setContentView(R.layout.activity_class_management);
-
+        setContentView(R.layout.activity_view_schedule);
     }
 }

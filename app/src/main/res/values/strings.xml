@@ -1,23 +1,31 @@
 <resources>
     <string name="app_name">Madproject</string>
-    <string name="emp_title">Teacher Salary Management System</string>
-    <string name="rteachername">Teacher Name</string>
-    <string name="teachername" />
-    <string name="rTeacher_sal">Teacher Salary</string>
-    <string name="rcompany_profit">Company Profit</string>
-    <string name="rteacher_netsal">Net Salary</string>
+    <string name="rsalary_teacherID">Enter Teacher ID</string>
+    <string name="rsalary_Teacher_sal">Enter Teacher Salary</string>
+    <string name="rsalarycompanypayment">Company Payment</string>
+    <string name="rsalaryteacher_netsal">Teacher Net Salary</string>
+    <string name="rschedule_btn_intro">Continue</string>
+    <string name="dashboard_title">Nilwala Education</string>
     <string name="rbtn_1">OK</string>
     <string name="rbtn_2">Clear</string>
     <string name="rpbtn_1">Add</string>
     <string name="rpbtn_2">View</string>
     <string name="rpbtn_3">Update</string>
     <string name="rpbtn_4">Delete</string>
-    <string name="rpbtn_intro">Continues</string>
-    <string name="dashboard_title">Nilwala Education</string>
+    <string name="rpbtn_5">Back</string>
+    <string name="rschedule_classID">Enter Class ID</string>
+    <string name="rschedule_teachername">Enter Teacher Name</string>
+    <string name="rschedule_classday">Enter Class Day</string>
+    <string name="rschedule_duration">Enter duration</string>
+    <string name="rschedule_starttime">Enter Starting Time</string>
+    <string name="title_classManagemet">Nilwala Education</string>
     <string name="dashboardhall">Hall Management</string>
+    <string name="emp_title">Teacher Salary Management System</string>
     <string name="btn_kbutton1">Add Teacher / Employee</string>
     <string name="btn_kbutton2">View Teaachers / Employees</string>
     <string name="btn_kback">Back</string>
     <string name="btn_kview">View Teachers / Employees</string>
     <string name="btn_kview1">View Teachers / Employees</string>
 </resources>
+
+
