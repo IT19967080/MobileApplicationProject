@@ -31,15 +31,15 @@
         <activity android:name=".update_teacher">
 
         </activity>
-        <activity android:name=".view_teachers" >
+        <activity android:name=".view_teachers" />
 
         <activity android:name=".navigationDrawer"></activity>
         <activity android:name=".aboutUs" />
         <activity android:name=".addStudent" />
         <activity android:name=".viewAndDeleteStudent" />
         <activity android:name=".TeacherManagement" />
-        <activity android:name=".mainHall" />
-        <activity android:name=".studentProfile">
+
+        <activity android:name=".studentProfile"/>
 
 
         <activity android:name=".Hall_Main_Sign">
