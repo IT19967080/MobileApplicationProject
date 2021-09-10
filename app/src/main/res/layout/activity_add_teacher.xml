@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ph_kNum"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginback"
+    tools:context=".Add_Teacher">
+
+    <TextView
+        android:id="@+id/tv_kadd"
+        android:layout_width="347dp"
+        android:layout_height="39dp"
+        android:text="Add Teacher / Employee"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cons_klayout1" />
+
+    <RadioGroup
+        android:id="@+id/rg_TeacherEmp"
+        android:layout_width="211dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginRight="176dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ktype">
+
+        <RadioButton
+            android:id="@+id/rb_Employee"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:text="Employee"
+            android:textColor="#FAF6F6" />
+
+        <RadioButton
+            android:id="@+id/rb_teacher"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="Teacher"
+            android:textColor="#F4F0F0" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_ktype"
+        android:layout_width="114dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="273dp"
+        android:layout_marginRight="273dp"
+        android:text="Select Type"
+        android:textColor="#101010"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_kadd" />
+
+    <TextView
+        android:id="@+id/tv_kaddName"
+        android:layout_width="114dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="273dp"
+        android:layout_marginRight="273dp"
+        android:text="Full Name"
+        android:textColor="#121212"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_TeacherEmp" />
+
+    <EditText
+        android:id="@+id/pt_kFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginRight="177dp"
+        android:ems="10"
+        android:hint="@string/pt_kFullName"
+        android:inputType="textPersonName"
+        android:text="Enter Full Name"
+        android:textColor="#F4F1F1"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_kaddName" />
+
+    <TextView
+        android:id="@+id/tv_kContact"
+        android:layout_width="227dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginRight="160dp"
+        android:text="Contact Number"
+        android:textColor="#101010"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pt_kFullName" />
+
+    <EditText
+        android:id="@+id/pt_mobNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginRight="177dp"
+        android:ems="10"
+        android:hint="@string/pt_mobNum"
+        android:inputType="textPersonName"
+        android:text="Enter Number"
+        android:textColor="#FBF8F8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_kContact" />
+
+    <TextView
+        android:id="@+id/tv_ksubject"
+        android:layout_width="114dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="273dp"
+        android:layout_marginRight="273dp"
+        android:text="Subject"
+        android:textColor="#0E0E0E"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pt_mobNum" />
+
+    <EditText
+        android:id="@+id/pt_ksubject"
+        android:layout_width="274dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="113dp"
+        android:layout_marginRight="113dp"
+        android:ems="10"
+        android:hint="@string/pt_ksubject"
+        android:inputType="textPersonName"
+        android:text="Enter Subject (Only for teachers)"
+        android:textColor="#F4F0F0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ksubject" />
+
+    <TextView
+        android:id="@+id/tv_idCard"
+        android:layout_width="192dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="195dp"
+        android:layout_marginRight="195dp"
+        android:text="National ID Number"
+        android:textColor="#121111"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pt_ksubject" />
+
+    <EditText
+        android:id="@+id/pt_kidcard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginRight="177dp"
+        android:ems="10"
+        android:hint="@string/pt_kidcard"
+        android:inputType="textPersonName"
+        android:text="Enter ID Number"
+        android:textColor="#FAF6F6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_idCard" />
+
+    <TextView
+        android:id="@+id/tv_kaddress"
+        android:layout_width="114dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="273dp"
+        android:layout_marginRight="273dp"
+        android:text="Address"
+        android:textColor="#121111"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pt_kidcard" />
+
+    <EditText
+        android:id="@+id/pt_kaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="178dp"
+        android:layout_marginRight="178dp"
+        android:ems="10"
+        android:hint="@string/pt_kaddress"
+        android:inputType="textPersonName"
+        android:text="Enter Address"
+        android:textColor="#FAF3F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_kaddress" />
+
+    <Button
+        android:id="@+id/btn_ksubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="50dp"
+        android:hint="@string/btn_ksubmit"
+        android:text="Submit"
+        app:backgroundTint="#00BCD4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pt_kaddress"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cons_klayout1"
+        android:layout_width="411dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="1dp"
+        android:background="#00BCD4"
+        app:layout_constraintBottom_toTopOf="@+id/tv_kadd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_klaytopic"
+            android:layout_width="310dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="4dp"
+            android:text="Teacher / Employee Management"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="48dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_klaytopic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/backarrowk" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

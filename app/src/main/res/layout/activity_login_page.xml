@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginback"
+    tools:context=".login_page">
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginLeft="144dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginRight="85dp"
+        android:text="Login"
+        android:textColor="@color/colorPurple"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <TextView
+        android:id="@+id/tv_kuser1"
+        android:layout_width="220dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:text="Enter Email Address"
+        android:textColor="#0B0A0A"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_login" />
+
+    <TextView
+        android:id="@+id/tv_kpwd1"
+        android:layout_width="220dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="30dp"
+        android:text="Password"
+        android:textColor="#101010"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pt_email" />
+
+    <EditText
+        android:id="@+id/pt_email"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:ems="10"
+        android:hint="@string/pt_email1"
+        android:inputType="textPersonName"
+        android:text="Email"
+        android:textColor="#473E3E"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_kuser1" />
+
+    <EditText
+        android:id="@+id/pw_pwd"
+        android:layout_width="216dp"
+        android:layout_height="32dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_kpwd1"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btn_klogin"
+        android:layout_width="81dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/btn_klogin"
+        android:text="Login"
+        android:textColor="#0B0909"
+        app:backgroundTint="#673AB7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pw_pwd" />
+
+    <TextView
+        android:id="@+id/tv_kif"
+        android:layout_width="250dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="20dp"
+        android:text="If you haven't Account, please Sign Up"
+        android:textColor="#673AB7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_klogin" />
+
+    <Button
+        android:id="@+id/btn_ksignUp"
+        android:layout_width="99dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="84dp"
+        android:hint="@string/btn_ksignUp"
+        android:text="Sign Up"
+        android:textColor="#673AB7"
+        android:textSize="12sp"
+        app:backgroundTint="#100909"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_kif" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="296dp"
+        android:layout_height="237dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/nilwala2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

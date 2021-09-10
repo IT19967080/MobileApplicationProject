@@ -5,14 +5,15 @@
     android:id="@+id/btn_kview"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/loginback"
     tools:context="@string/btn_kbutton2">
 
     <TextView
         android:id="@+id/tv_topic1"
-        android:layout_width="377dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
+        android:layout_width="360dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
@@ -20,34 +21,19 @@
         android:textColor="#121111"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
 
     <Button
         android:id="@+id/btn_kbutton1"
         android:layout_width="191dp"
         android:layout_height="53dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="180dp"
-        android:layout_marginRight="180dp"
+        android:layout_marginTop="64dp"
         android:text="@string/btn_kbutton1"
+        app:backgroundTint="#00BCD4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_topic1" />
-
-    <Button
-        android:id="@+id/btn_kback"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="284dp"
-        android:layout_marginLeft="284dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:text="@string/btn_kback"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_topic1" />
 
@@ -55,27 +41,78 @@
         android:id="@+id/btn_kview1"
         android:layout_width="193dp"
         android:layout_height="55dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="180dp"
-        android:layout_marginRight="180dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginRight="108dp"
         android:text="@string/btn_kview1"
+        app:backgroundTint="#00BCD4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_kbutton1" />
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="413dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="1dp"
+        android:background="#20BBCF"
+        app:layout_constraintBottom_toTopOf="@+id/tv_topic1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginLeft="36dp"
+            android:src="@drawable/backarrowk"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_klaytopic2"
+            android:layout_width="220dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginEnd="84dp"
+            android:layout_marginRight="84dp"
+            android:text="Nilwala Education"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView6"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.615" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="193dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:text="Update / Delete Details"
+        app:backgroundTint="#00BCD4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_kview1" />
+
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="296dp"
-        android:layout_height="380dp"
-        android:layout_marginTop="90dp"
-        android:layout_marginBottom="18dp"
+        android:layout_width="243dp"
+        android:layout_height="262dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/teacher2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_kview1"
-        app:srcCompat="@drawable/kteacher" />
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
