@@ -7,190 +7,123 @@
     android:background="@drawable/loginback"
     tools:context=".Registration_page">
 
-    <TextView
-        android:id="@+id/tv_kregister"
-        android:layout_width="144dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="134dp"
-        android:layout_marginLeft="134dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
+    <Button
+        android:id="@+id/btn_ksignUp"
+        android:layout_width="149dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginLeft="91dp"
+
+
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginRight="102dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
         android:text="Register"
-        android:textColor="#2196F3"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toStartOf="@+id/btn_kcancel1"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repassword" />
+
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_width="404dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/imageView"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:hint="Confirm Password"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="193dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="88dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/reg"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tv_kfirstName"
-        android:layout_width="220dp"
-        android:layout_height="35dp"
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="399dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/imageView"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:hint="User Name"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="399dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/imageView"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+
         android:layout_marginTop="20dp"
-        android:text="First Name"
-        android:textColor="#F1EEEE"
-        android:textSize="20sp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:hint="Enter Email"
+        android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_kregister" />
+        app:layout_constraintTop_toBottomOf="@+id/username" />
 
-    <TextView
-        android:id="@+id/tv_kLastName"
-        android:layout_width="220dp"
-        android:layout_height="35dp"
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="397dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/imageView"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
-        android:text="Last Name"
-        android:textColor="#FBF9F9"
-        android:textSize="20sp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:hint="Enter Password"
+        android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pt_kfname" />
-
-    <TextView
-        android:id="@+id/tv_kemail2"
-        android:layout_width="220dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="10dp"
-        android:text="Email"
-        android:textColor="#F8F6F6"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pt_klname" />
-
-    <TextView
-        android:id="@+id/tv_comPwd"
-        android:layout_width="220dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="10dp"
-        android:text="Confirm Password"
-        android:textColor="#F8F4F4"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pt_kpwd3" />
-
-    <TextView
-        android:id="@+id/tv_pwd2"
-        android:layout_width="220dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="10dp"
-        android:text="Password"
-        android:textColor="#FBFBFB"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pt_kemail2" />
+        app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <Button
-        android:id="@+id/btn_kregister"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
-        android:hint="@string/btn_kregister"
-        android:text="Register"
-        android:textColor="#010B0E"
-        app:backgroundTint="#00BCD4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pt_kcompwd2" />
-
-    <EditText
-        android:id="@+id/pt_kfname"
+        android:id="@+id/btn_ksignIn"
         android:layout_width="219dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="5dp"
-        android:ems="10"
-        android:hint="@string/pt_kfname"
-        android:inputType="textPersonName"
-        android:text="Enter First Name"
-        android:textColor="#8A7E7E"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_kfirstName" />
+        android:layout_height="51dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginLeft="91dp"
 
-    <EditText
-        android:id="@+id/pt_klname"
-        android:layout_width="219dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="5dp"
-        android:ems="10"
-        android:hint="@string/pt_kllname"
-        android:inputType="textPersonName"
-        android:text="Enter Last Name"
-        android:textColor="#8A7E7E"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_kLastName" />
 
-    <EditText
-        android:id="@+id/pt_kemail2"
-        android:layout_width="219dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="5dp"
-        android:ems="10"
-        android:hint="@string/pt_kemail2"
-        android:inputType="textPersonName"
-        android:text="Enter Email"
-        android:textColor="#8A7E7E"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginRight="102dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:text="Already  User! \n Sign In"
+        android:textAllCaps="false"
+        android:textSize="13dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_kemail2" />
+        app:layout_constraintTop_toBottomOf="@+id/repassword" />
 
-    <EditText
-        android:id="@+id/pt_kpwd3"
-        android:layout_width="219dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="5dp"
-        android:ems="10"
-        android:hint="@string/pt_kpwd3"
-        android:inputType="textPersonName"
-        android:text="Enter Password"
-        android:textColor="#8A7E7E"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_pwd2" />
 
-    <EditText
-        android:id="@+id/pt_kcompwd2"
-        android:layout_width="219dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="5dp"
-        android:ems="10"
-        android:hint="@string/pt_kcompwd2"
-        android:inputType="textPersonName"
-        android:text="Confirm Above Password"
-        android:textColor="#8A7E7E"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_comPwd" />
-
-    <Button
-        android:id="@+id/btn_kcancel1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="7dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:hint="@string/btn_kcancel1"
-        android:text="Cancel"
-        app:backgroundTint="#00BCD4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tv_kregister"
-        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
