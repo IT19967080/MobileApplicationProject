@@ -51,40 +51,9 @@
         </activity>
 
 
-        <activity android:name=".Hall_View_TDE">
-
-        </activity>
-
-
-        <activity android:name=".Hall_View_DE">
-
-        </activity>
-
-
-        <activity android:name=".Hall_view_Tdata">
-
-        </activity>
-
-
-        <activity android:name=".Hall_View_Hdata">
-
-        </activity>
-
-
         <activity android:name=".Hall_Gallery">
 
         </activity>
-
-
-        <activity android:name=".Hall_Add">
-
-        </activity>
-
-
-        <activity android:name=".Hall_Home">
-
-        </activity>
-
 
 
     </application>
