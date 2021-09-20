@@ -49,9 +49,20 @@ public class incomecal extends AppCompatActivity {
         double salary = Double.parseDouble(ed2.getText().toString());
         double company_profit,netsalary ;
 
+        company_profit = calculateSalary(salary);
+
+        ed3.setText(String.valueOf(company_profit));
+
+        netsalary = salary - company_profit;
+
+        ed4.setText(String.valueOf(netsalary));
+    }
+
+    public double calculateSalary(double salary){
+        double company_profit;
         if(salary>100000)
         {
-            company_profit = salary *20/100;
+            company_profit = salary * 20/100;
         }
         else if(salary>50000)
         {
@@ -60,13 +71,10 @@ public class incomecal extends AppCompatActivity {
         else{
             company_profit = 0;
         }
-
-        ed3.setText(String.valueOf(company_profit));
-
-        netsalary = salary -company_profit;
-
-        ed4.setText(String.valueOf(netsalary));
+        return company_profit;
     }
+
+
 
     public void clear(){
         ed1.setText("");
