@@ -39,7 +39,14 @@
         <activity android:name=".viewAndDeleteStudent" />
         <activity android:name=".TeacherManagement" />
 
-        <activity android:name=".studentProfile"/>
+        <activity android:name=".studentProfile">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            </activity>
 
 
     </application>
