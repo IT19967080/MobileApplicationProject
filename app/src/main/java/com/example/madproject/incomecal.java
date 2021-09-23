@@ -33,7 +33,18 @@ public class incomecal extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                teachersal();
+
+                double netsalary ;
+
+                double salary = Double.parseDouble(ed2.getText().toString());
+
+                double company_profit = calculateSalary(Double.parseDouble(ed2.getText().toString()));
+
+                ed3.setText(String.valueOf(company_profit));
+
+                netsalary = salary - company_profit;
+
+                ed4.setText(String.valueOf(netsalary));
             }
         });
 
@@ -45,20 +56,8 @@ public class incomecal extends AppCompatActivity {
         });
 
     }
-    public void teachersal(){
-        double salary = Double.parseDouble(ed2.getText().toString());
-        double company_profit,netsalary ;
 
-        company_profit = calculateSalary(salary);
-
-        ed3.setText(String.valueOf(company_profit));
-
-        netsalary = salary - company_profit;
-
-        ed4.setText(String.valueOf(netsalary));
-    }
-
-    public double calculateSalary(double salary){
+     protected double calculateSalary(double salary){
         double company_profit;
         if(salary>100000)
         {
