@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         img1 = findViewById(R.id.schedule_icon);
-        img2 =  findViewById(R.id.salary_icon);
+
 
         img1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,13 +33,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        img2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,incomecal.class);
-                startActivity(intent);
-            }
-        });
+
 
     }
 }

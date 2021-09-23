@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class ClassIntroActivity extends AppCompatActivity {
 
-    Button btn;
+    Button btn1,btn2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,8 +18,18 @@ public class ClassIntroActivity extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();//this line hides the action bar
         setContentView(R.layout.activity_class_intro);
-        btn = findViewById(R.id.btn_continue);
-        btn.setOnClickListener(new View.OnClickListener() {
+        btn1 = findViewById(R.id.btn_continue);
+        btn2 = findViewById(R.id.btn_classfee);
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ClassIntroActivity.this,incomecal.class);
+                startActivity(intent);
+            }
+        });
+
+        btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ClassIntroActivity.this,ClassManagement.class);

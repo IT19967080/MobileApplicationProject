@@ -105,7 +105,7 @@
         android:layout_marginRight="8dp"
         android:ems="10"
         android:hint="@string/rschedule_starttime"
-        android:inputType="textPersonName"
+        android:inputType="time"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textSize="16sp"
