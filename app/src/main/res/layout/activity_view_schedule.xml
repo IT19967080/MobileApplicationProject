@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/back1"
+    android:orientation="vertical"
     tools:context=".view_schedule">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -43,48 +44,16 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-    <TextView
-        android:id="@+id/logo"
-        android:layout_width="195dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="16dp"
-        android:text="View Schedules"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.203"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.132" />
-
     <TextView
         android:id="@+id/textView18"
-        android:layout_width="322dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginLeft="44dp"
-        android:layout_marginTop="24dp"
-        android:text="MC001        history      Monday       2        2pm"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo" />
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:text="View schedules" />
 
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="322dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginLeft="44dp"
-        android:layout_marginTop="8dp"
-        android:text="GC001        Physics     Sunday       2.5     10am"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lst1"
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        />
+</LinearLayout>

@@ -59,19 +59,18 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <EditText
-        android:id="@+id/teacher_name"
+        android:id="@+id/teacher_id"
         android:layout_width="129dp"
-        android:layout_height="20dp"
+        android:layout_height="38dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="40dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="T001"
+        android:textSize="14.5sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+        app:layout_constraintStart_toEndOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/textView4"
@@ -88,16 +87,15 @@
 
     <EditText
         android:id="@+id/teacher_sal"
-        android:layout_width="128dp"
-        android:layout_height="20dp"
+        android:layout_width="129dp"
+        android:layout_height="38dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="27dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/teacher_name" />
+        android:textSize="14.5sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView4"
+        app:layout_constraintStart_toEndOf="@+id/textView4" />
 
     <TextView
         android:id="@+id/textView5"
@@ -114,16 +112,15 @@
 
     <EditText
         android:id="@+id/company_profit"
-        android:layout_width="128dp"
-        android:layout_height="20dp"
+        android:layout_width="129dp"
+        android:layout_height="38dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="32dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/teacher_sal" />
+        android:textSize="14.5sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView5"
+        app:layout_constraintStart_toEndOf="@+id/textView5" />
 
     <TextView
         android:id="@+id/textView6"
@@ -139,20 +136,19 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName6"
-        android:layout_width="128dp"
-        android:layout_height="20dp"
+        android:id="@+id/net_sal"
+        android:layout_width="129dp"
+        android:layout_height="38dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="30dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/company_profit" />
+        android:textSize="14.5sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView6"
+        app:layout_constraintStart_toEndOf="@+id/textView6" />
 
     <Button
-        android:id="@+id/btn_1"
+        android:id="@+id/btnsal_1"
         android:layout_width="95dp"
         android:layout_height="48dp"
         android:layout_marginStart="92dp"
@@ -165,7 +161,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <Button
-        android:id="@+id/btn_2"
+        android:id="@+id/btn_sal2"
         android:layout_width="95dp"
         android:layout_height="48dp"
         android:layout_marginStart="40dp"
@@ -173,8 +169,8 @@
         android:text="@string/rbtn_2"
         android:textColor="@color/black"
         app:backgroundTint="@color/lightgreen"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btn_1"
-        app:layout_constraintStart_toEndOf="@+id/btn_1" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnsal_1"
+        app:layout_constraintStart_toEndOf="@+id/btnsal_1" />
 
     <ImageView
         android:id="@+id/imageView5"
