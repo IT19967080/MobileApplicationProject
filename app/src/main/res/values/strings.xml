@@ -117,6 +117,7 @@
     <string name="N_H_htviewid">"    MBN 045"</string>
     <string name="N_H_htviewteacher">"    K.Gayan / H.Kanishka"</string>
     <string name="rschedule_btn_classfee">Class Fee</string>
+    <string name="invalid_name">Please Enter Valid Hall ID</string>
 </resources>
 
 

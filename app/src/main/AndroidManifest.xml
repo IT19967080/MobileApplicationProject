@@ -29,7 +29,9 @@
 
         <activity android:name=".Student_Managment"></activity>
 
-        <activity android:name=".ClassManagement"></activity>
+        <activity android:name=".ClassManagement">
+
+        </activity>
         <activity android:name=".MainActivity"/>
         <activity android:name=".update_teacher">
 
