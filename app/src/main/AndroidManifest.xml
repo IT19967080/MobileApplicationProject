@@ -9,17 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Madproject">
-        <activity android:name=".view_schedule">
+        <activity android:name=".Hall_Management_Home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <activity android:name=".updateschedule" >
-
-
-
-
-        </activity>
-        <activity android:name=".ClassIntroActivity" >
+        <activity android:name=".Hall_Managment">
 
 
         </activity>
@@ -34,9 +31,17 @@
 
 
         </activity>
-        <activity android:name=".view_teachers" />
+        <activity android:name=".Gallery_Home" />
+        <activity android:name=".Welcome_Sign" />
+        <activity android:name=".EditHall" />
+        <activity android:name=".AddHall" />
+        <activity android:name=".MainActivityHallList"></activity>
+        <activity android:name=".view_schedule" />
+        <activity android:name=".updateschedule" />
+        <activity android:name=".ClassIntroActivity" />
 
-        <activity android:name=".navigationDrawer"></activity>
+        <activity android:name=".view_teachers" />
+        <activity android:name=".navigationDrawer" />
         <activity android:name=".aboutUs" />
         <activity android:name=".addStudent" />
         <activity android:name=".viewAndDeleteStudent" />
@@ -57,6 +62,7 @@
         <activity android:name=".Hall_Gallery">
 
         </activity>
+
 
 
 

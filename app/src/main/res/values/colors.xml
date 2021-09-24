@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="colorPrimaryDark">#3262c4</color>
     <color name="colorWhite">#FFFFFF</color>
+    <color name="hint">#A7C5CA</color>
 
     <color name="black">#FF000000</color>
     <color name="purple_700">#FF3700B3</color>

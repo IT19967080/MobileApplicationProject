@@ -1,47 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/b8"
-    tools:context=".Hall_Gallery">
+    tools:context=".Gallery_Home">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="414dp"
         android:layout_height="61dp"
-        android:background="@color/gold"
+        android:background="@color/ffffff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="279dp"
-            android:layout_height="54dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginLeft="28dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/dashboard_title"
-            android:textColor="@color/colorWhite"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/imageView19"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="8dp"
-            app:layout_constraintStart_toEndOf="@+id/textView7"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/dmenu" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageView
         android:id="@+id/imageView6"
@@ -60,6 +34,7 @@
         android:layout_height="29dp"
         android:text="Matara Main Branch"
         android:textSize="20sp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.131"
@@ -73,6 +48,7 @@
         android:layout_height="29dp"
         android:text="mataranilwala@gmail.com"
         android:textSize="20sp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.131"
@@ -86,6 +62,7 @@
         android:layout_height="29dp"
         android:text="047-2649853"
         android:textSize="20sp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.117"
@@ -147,6 +124,7 @@
         android:layout_height="20dp"
         android:text="Galle"
         android:textSize="16sp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.109"
@@ -160,6 +138,7 @@
         android:layout_height="20dp"
         android:text="Jaffna"
         android:textSize="16sp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.109"
@@ -173,6 +152,7 @@
         android:layout_height="20dp"
         android:text="Gampaha"
         android:textSize="16sp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.823"
@@ -186,6 +166,7 @@
         android:layout_height="20dp"
         android:text="Kandy"
         android:textSize="16sp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.823"
@@ -199,6 +180,7 @@
         android:layout_height="20dp"
         android:text="gallenilwala@gmail.com"
         android:textSize="16sp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.109"
@@ -212,6 +194,7 @@
         android:layout_height="20dp"
         android:text="gampnilwala@gmail"
         android:textSize="16sp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.823"
@@ -225,6 +208,7 @@
         android:layout_height="20dp"
         android:text="jaffnanilwala@gmail.com"
         android:textSize="16sp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.109"
@@ -238,6 +222,7 @@
         android:layout_height="20dp"
         android:text="kandynilwala@gmail.com"
         android:textSize="16sp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.823"
@@ -251,6 +236,7 @@
         android:layout_height="20dp"
         android:text="047-6524862"
         android:textSize="16sp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.109"
@@ -264,6 +250,7 @@
         android:layout_height="20dp"
         android:text="047-6524862"
         android:textSize="16sp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.823"
@@ -277,6 +264,7 @@
         android:layout_height="20dp"
         android:text="047-6524862"
         android:textSize="16sp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.109"
@@ -290,6 +278,7 @@
         android:layout_height="20dp"
         android:text="047-6522645"
         android:textSize="16sp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.823"
