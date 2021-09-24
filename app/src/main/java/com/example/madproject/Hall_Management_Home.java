@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class Hall_Management_Home extends AppCompatActivity {
     ImageView imageView;
@@ -49,4 +50,6 @@ public class Hall_Management_Home extends AppCompatActivity {
 
 
     }
+
+
 }

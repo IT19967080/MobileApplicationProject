@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -17,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivityHallList extends AppCompatActivity {
-    private Button add;
+    private ImageView add;
     private ListView listView;
     private TextView count;
     Context context;

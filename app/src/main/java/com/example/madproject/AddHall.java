@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class AddHall extends AppCompatActivity {
 
@@ -16,6 +17,7 @@ public class AddHall extends AppCompatActivity {
     private Button add;
     private DbHandler dbHandler;
     private Context context;
+
 
 
     @Override
@@ -45,19 +47,25 @@ public class AddHall extends AppCompatActivity {
              String userTeacher= teacher.getText().toString();
              long started= System.currentTimeMillis();
 
+
+
              //model class object create
                 HallModel hallModel= new HallModel(userHallId,userCapacity,userAc,userHallManager,userTeacher,started,0);
                 dbHandler.addHall(hallModel);
 
+
                 startActivity(new Intent(context,MainActivityHallList.class));
 
-
             }
+
         });
 
-
-
     }
+    public void showToast(View view) {
+        Toast toast= Toast.makeText(getApplicationContext(),"Hall Added!",Toast.LENGTH_SHORT);
+        toast.show();
+    }
+
 }
 
 
