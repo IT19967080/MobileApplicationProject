@@ -136,26 +136,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/stu_add_address1" />
 
-    <RadioButton
-        android:id="@+id/stu_add_gender_male"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:text="Male"
-        app:layout_constraintBaseline_toBaselineOf="@+id/stu_add_gender1"
-        app:layout_constraintStart_toEndOf="@+id/stu_add_gender1" />
-
-    <RadioButton
-        android:id="@+id/stu_add_gender_female"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:text="Female"
-        app:layout_constraintBaseline_toBaselineOf="@+id/stu_add_gender_male"
-        app:layout_constraintStart_toEndOf="@+id/stu_add_gender_male" />
-
     <TextView
         android:id="@+id/stu_add_number1"
         android:layout_width="111dp"
@@ -212,5 +192,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/stu_add_parent_number1" />
+
+    <EditText
+        android:id="@+id/stu_add_gender2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBaseline_toBaselineOf="@+id/stu_add_gender1"
+        app:layout_constraintStart_toEndOf="@+id/stu_add_gender1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
