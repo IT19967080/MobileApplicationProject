@@ -48,12 +48,18 @@
         android:id="@+id/textView18"
         android:layout_width="match_parent"
         android:layout_height="61dp"
-        android:text="View schedules" />
+        android:gravity="center"
+        android:text="View schedules"
+        android:textColor="#090909"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ListView
+        android:id="@+id/lst1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/lst1"
 
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </LinearLayout>

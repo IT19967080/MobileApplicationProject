@@ -10,6 +10,10 @@
     <string name="err_classday">Enter valid day</string>
     <string name="err_duration">Enter valid duration</string>
     <string name="err_startingtime">Enter valid time</string>
+    <string name="err_teachersal">Enter valid salary</string>
+    <string name="errteacherid">Enter valid teacherID</string>
+    <string name="errcompanyprofit">Enter valid Comapnyprofit</string>
+    <string name="errnetsalary">Enter valid net salary</string>
 
 
     <string name="dashboard_title">Nilwala Education</string>
