@@ -9,87 +9,48 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Madproject">
-        <activity android:name=".view_schedule">
-
-
-        </activity>
-        <activity android:name=".updateschedule" >
-
-
-
+        <activity
+            android:name=".class_payements"
+            android:exported="true">
 
         </activity>
-        <activity android:name=".ClassIntroActivity" >
-
-        </activity>
-        <activity android:name=".incomecal" ></activity>
-
-        <activity android:name=".Student_Managment"></activity>
-
-        <activity android:name=".ClassManagement"></activity>
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".update_teacher">
-
-        </activity>
+        <activity android:name=".view_schedule" />
+        <activity android:name=".updateschedule" />
+        <activity android:name=".ClassIntroActivity" />
+        <activity android:name=".incomecal" />
+        <activity android:name=".Student_Managment" />
+        <activity android:name=".ClassManagement" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".update_teacher" />
         <activity android:name=".view_teachers" />
-
-        <activity android:name=".navigationDrawer"></activity>
+        <activity android:name=".navigationDrawer" />
         <activity android:name=".aboutUs" />
         <activity android:name=".addStudent" />
         <activity android:name=".viewAndDeleteStudent" />
-        <activity android:name=".TeacherManagement" />
-
-        <activity android:name=".studentProfile"/>
-
-
-        <activity android:name=".Hall_Main_Sign">
-
-        </activity>
-
-
-        <activity android:name=".Hall_View_TDE">
-
-        </activity>
-
-
-        <activity android:name=".Hall_View_DE">
-
-        </activity>
-
-
-        <activity android:name=".Hall_view_Tdata">
-
-        </activity>
-
-
-        <activity android:name=".Hall_View_Hdata">
-
-        </activity>
-
-
-        <activity android:name=".Hall_Gallery">
-
-        </activity>
-
-
-        <activity android:name=".Hall_Add">
-
-        </activity>
-
-
-        <activity android:name=".Hall_Home">
-
-        </activity>
-
-        <activity android:name=".Registration_page">
+        <activity android:name=".TeacherManagement" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".login_page"></activity>
 
+
+        </activity>
+        <activity android:name=".studentProfile" />
+        <activity android:name=".Hall_Main_Sign" />
+        <activity android:name=".Hall_View_TDE" />
+        <activity android:name=".Hall_View_DE" />
+        <activity android:name=".Hall_view_Tdata" />
+        <activity android:name=".Hall_View_Hdata" />
+        <activity android:name=".Hall_Gallery" />
+        <activity android:name=".Hall_Add" />
+        <activity android:name=".Hall_Home" />
+        <activity android:name=".Registration_page" />
+        <activity android:name=".login_page" />
+        <activity android:name=".Add_Teacher" >
+
+
+        </activity>
     </application>
 
 </manifest>

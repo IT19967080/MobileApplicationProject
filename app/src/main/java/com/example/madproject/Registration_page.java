@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
+
 public class Registration_page extends AppCompatActivity {
 
     EditText username,email,password,repassword;
