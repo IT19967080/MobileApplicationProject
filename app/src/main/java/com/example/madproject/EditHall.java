@@ -6,8 +6,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class EditHall extends AppCompatActivity {
     private EditText hallId,capacity,ac,hallManager,teacher;
@@ -16,9 +18,15 @@ public class EditHall extends AppCompatActivity {
     private Context context;
     private Long updateDate;
 
+    boolean isAllFieldsChecked = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_edit_hall);
+
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_edit_hall);
 
         context= this;
@@ -40,6 +48,8 @@ public class EditHall extends AppCompatActivity {
         hallManager.setText(hallmodel.getHallManager());
         teacher.setText(hallmodel.getTeacher());
 
+        
+
         edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,11 +60,47 @@ public class EditHall extends AppCompatActivity {
                 String teacherText= teacher.getText().toString();
                 updateDate= System.currentTimeMillis();
 
-                HallModel hallModel=new HallModel(Integer.parseInt(id),hallIdText,capacityText,acText,hallManagerText,teacherText,updateDate,0);
+                isAllFieldsChecked = CheckAllFields();
 
-                int state= dbHandler.updateSingleHallModel(hallModel);
-                System.out.println(state);
-                startActivity(new Intent(context,MainActivityHallList.class));
+                if (isAllFieldsChecked) {
+
+                    HallModel hallModel = new HallModel(Integer.parseInt(id), hallIdText, capacityText, acText, hallManagerText, teacherText, updateDate, 0);
+
+                    int state = dbHandler.updateSingleHallModel(hallModel);
+                    System.out.println(state);
+                    startActivity(new Intent(context, MainActivityHallList.class));
+                    Toast.makeText(getApplicationContext(),"Hall Edited!",Toast.LENGTH_SHORT).show();
+
+                }
+            }
+
+            private boolean CheckAllFields() {
+                if (hallId.length() == 0) {
+                    hallId.setError("This field is required");
+                    return false;
+                }
+
+                if (capacity.length() >4) {
+                    capacity.setError("This field is required");
+                    return false;
+                }
+
+                if (ac.length() == 0) {
+                    ac.setError("Email is required");
+                    return false;
+                }
+
+                if (hallManager.length() == 0) {
+                    hallManager.setError("Password is required");
+                    return false;
+                } else if (teacher.length() == 0) {
+                    teacher.setError("Password must be minimum 8 characters");
+                    return false;
+                }
+
+                // after all validation return true.
+                return true;
+
             }
         });
 
