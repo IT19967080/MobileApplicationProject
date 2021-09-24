@@ -7,6 +7,8 @@
     android:background="@drawable/hall_background"
     tools:context=".AddHall">
 
+
+
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
@@ -108,7 +110,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="76dp"
         android:text="Add Hall"
-
+        android:onClick="showToast"
         android:textColorHint="@color/hint"
         android:background="@drawable/hall_button"
         android:textSize="20dp"
