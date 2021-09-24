@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/loginback"
-    tools:context="@string/btn_kbutton2">
+   >
 
     <TextView
         android:id="@+id/tv_topic1"
@@ -14,10 +14,10 @@
         android:layout_height="57dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:text="Teacher / Employee Management"
+        android:text="Teacher  Management"
         android:textColor="#121111"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,32 +25,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
 
-    <Button
-        android:id="@+id/btn_kbutton1"
-        android:layout_width="191dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="64dp"
-        android:text="@string/btn_kbutton1"
-        app:backgroundTint="#00BCD4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_topic1" />
 
-    <Button
-        android:id="@+id/btn_kview1"
-        android:layout_width="193dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="110dp"
-        android:layout_marginLeft="110dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="108dp"
-        android:layout_marginRight="108dp"
-        android:text="@string/btn_kview1"
-        app:backgroundTint="#00BCD4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_kbutton1" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
@@ -91,28 +66,38 @@
             app:layout_constraintVertical_bias="0.615" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="193dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="40dp"
-        android:text="Update / Delete Details"
-        app:backgroundTint="#00BCD4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_kview1" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="243dp"
-        android:layout_height="262dp"
-        android:layout_marginTop="5dp"
+        android:layout_width="240dp"
+        android:layout_height="234dp"
         android:layout_marginBottom="16dp"
         android:src="@drawable/teacher2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_addteachers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Add Teacher"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_topic1" />
+
+    <Button
+        android:id="@+id/btn_salary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salary check"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_addteachers"
+        app:layout_constraintVertical_bias="0.489" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,6 +15,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        <activity
+            android:name=".class_payements"
+            android:exported="true">
+
         </activity>
         <activity android:name=".Hall_Managment">
 
@@ -40,6 +44,7 @@
         <activity android:name=".updateschedule" />
         <activity android:name=".ClassIntroActivity" />
 
+
         <activity android:name=".view_teachers" />
         <activity android:name=".navigationDrawer" />
         <activity android:name=".aboutUs" />
@@ -47,21 +52,20 @@
         <activity android:name=".viewAndDeleteStudent" />
         <activity android:name=".TeacherManagement" />
 
-        <activity android:name=".studentProfile"/>
 
 
-        <activity android:name=".Hall_Main_Sign">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
 
 
-        <activity android:name=".Hall_Gallery">
 
-        </activity>
+
+        <activity android:name=".studentProfile" />
+
+        <activity android:name=".Registration_page" />
+        <activity android:name=".login_page" />
+        <activity android:name=".Add_Teacher" />
+
+
+
 
 
 
