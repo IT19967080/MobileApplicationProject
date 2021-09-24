@@ -44,36 +44,31 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="358dp"
-        android:layout_height="119dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:gravity="center"
-        android:inputType="textMultiLine"
-        android:text="You can manage classes from this feature.You should provide Class ID to view existing records"
-        android:textAlignment="center"
-
-        android:textColor="@color/black"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
     <Button
         android:id="@+id/btn_continue"
-        android:layout_width="152dp"
+        android:layout_width="182dp"
         android:layout_height="61dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="76dp"
         android:text="@string/rschedule_btn_intro"
         android:textColor="@color/black"
         app:backgroundTint="@color/colourgreen"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btn_classfee"
+        android:layout_width="182dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/rschedule_btn_classfee"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/colourgreen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_continue" />
 
     <ImageView
         android:id="@+id/imageView"

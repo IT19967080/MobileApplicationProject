@@ -9,7 +9,9 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class incomecal extends AppCompatActivity {
-
+public incomecal(){
+    System.out.println("sdadad");
+}
 
     EditText ed1,ed2,ed3,ed4;
     Button btn1,btn2;
@@ -42,7 +44,8 @@ public class incomecal extends AppCompatActivity {
 
                 ed3.setText(String.valueOf(company_profit));
 
-                netsalary = salary - company_profit;
+
+                netsalary = calculateNetsalary(salary,company_profit);
 
                 ed4.setText(String.valueOf(netsalary));
             }
@@ -57,7 +60,7 @@ public class incomecal extends AppCompatActivity {
 
     }
 
-     protected double calculateSalary(double salary){
+     public static double calculateSalary(double salary){
         double company_profit;
         if(salary>100000)
         {
@@ -73,6 +76,9 @@ public class incomecal extends AppCompatActivity {
         return company_profit;
     }
 
+    public static double calculateNetsalary(double salary,double company_profit){
+        return  salary- company_profit;
+    }
 
 
     public void clear(){

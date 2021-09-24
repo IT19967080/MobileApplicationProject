@@ -4,7 +4,14 @@
     <string name="rsalary_Teacher_sal">Enter Teacher Salary</string>
     <string name="rsalarycompanypayment">Company Payment</string>
     <string name="rsalaryteacher_netsal">Teacher Net Salary</string>
-    <string name="rschedule_btn_intro">Continue</string>
+    <string name="rschedule_btn_intro">Manage Class</string>
+    <string name="err_classId">Enter valid Class ID</string>
+    <string name="err_teachername">Enter valid Name</string>
+    <string name="err_classday">Enter valid day</string>
+    <string name="err_duration">Enter valid duration</string>
+    <string name="err_startingtime">Enter valid time</string>
+
+
     <string name="dashboard_title">Nilwala Education</string>
     <string name="rbtn_1">OK</string>
     <string name="rbtn_2">Clear</string>
@@ -109,6 +116,7 @@
     <string name="N_H_ht5">"    MBN 006"</string>
     <string name="N_H_htviewid">"    MBN 045"</string>
     <string name="N_H_htviewteacher">"    K.Gayan / H.Kanishka"</string>
+    <string name="rschedule_btn_classfee">Class Fee</string>
 </resources>
 
 

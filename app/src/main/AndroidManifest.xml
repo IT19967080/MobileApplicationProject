@@ -31,6 +31,8 @@
         <activity android:name=".MainActivity"/>
         <activity android:name=".update_teacher">
 
+
+
         </activity>
         <activity android:name=".view_teachers" />
 
@@ -55,6 +57,7 @@
         <activity android:name=".Hall_Gallery">
 
         </activity>
+
 
 
     </application>
