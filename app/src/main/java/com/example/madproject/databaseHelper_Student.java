@@ -6,6 +6,9 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class databaseHelper_Student extends SQLiteOpenHelper {
 
@@ -14,7 +17,7 @@ public class databaseHelper_Student extends SQLiteOpenHelper {
     //table name
     public static final String TABLE_NAME = "student_table";
     //column names
-    public static final String Col_1 = "Student_ID";
+    public static final String Col_1 = "id";
     public static final String Col_2 = "First_Name";
     public static final String Col_3 = "Last_Name";
     public static final String Col_4 = "Address";
@@ -33,7 +36,7 @@ public class databaseHelper_Student extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
 
-        db.execSQL("CREATE TABLE student_table ( Student_ID INTEGER PRIMARY KEY AUTOINCREMENT,First_Name TEXT, Last_Name TEXT, Address TEXT, Gender TEXT, Phone_Number NUMBER, Parents_Guardians_Number NUMBER)");
+        db.execSQL("CREATE TABLE student_table ( id String PRIMARY KEY AUTOINCREMENT,First_Name TEXT, Last_Name TEXT, Address TEXT, Gender TEXT, Phone_Number NUMBER, Parents_Guardians_Number NUMBER)");
 
     }
 
@@ -65,10 +68,87 @@ public class databaseHelper_Student extends SQLiteOpenHelper {
 
     }
 
-    //all data retrieve method
-    public Cursor getAllStudentData() {
+    //get all students into a list
+    public List<StudentModel> getAllStudentModals(){
+
+        List<StudentModel> studentModels= new ArrayList();
         SQLiteDatabase db = this.getWritableDatabase();
-        Cursor res = db.rawQuery("SELECT * FROM "+TABLE_NAME+" ",null);
-        return res;
+
+        Cursor cursor= db.rawQuery("SELECT * FROM "+TABLE_NAME+" ",null);
+
+        if(cursor.moveToFirst()){
+            do{
+                //create new hall object
+                StudentModel studentModel= new StudentModel();
+
+                studentModel.setStudentFname(cursor.getString(0));
+                studentModel.setStudentLname(cursor.getString(1));
+                studentModel.setStudentAddress(cursor.getString(2));
+                studentModel.setStudentGender(cursor.getString(3));
+                studentModel.setStudentnumber(cursor.getString(4));
+                studentModel.setParentnumber(cursor.getString(5));
+
+                studentModels.add(studentModel);
+            }while (cursor.moveToNext());
+
+        }
+        return studentModels;
+
+    }
+    // get one student details
+    public StudentModel getOneStudentDetails(int id){
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        Cursor cursor=  db.query(TABLE_NAME,new String[]{Col_1,Col_2,Col_3,Col_4,Col_5,Col_6,Col_7},Col_1 + "= ?",new String[]{String.valueOf(id)},null,null,null);
+
+        StudentModel studentModel;
+        if(cursor != null){
+            cursor.moveToFirst();
+
+            studentModel = new StudentModel(
+                    cursor.getString(0),
+                    cursor.getString(1),
+                    cursor.getString(2),
+                    cursor.getString(3),
+                    cursor.getString(4),
+                    cursor.getString(5),
+                    cursor.getString(6),
+                    cursor.getLong(7),
+                    cursor.getLong(8)
+
+
+            );
+            return studentModel;
+        }
+        return null;
+    }
+
+    //delete student
+    public void deleteStudent(String id){
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete(TABLE_NAME,id+" =?",new String[]{String.valueOf(id)});
+        db.close();
+    }
+
+    //update student
+    public int updateStudent(StudentModel studentmodel){
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(Col_2,studentmodel.getStudentFname());
+        contentValues.put(Col_3,studentmodel.getStudentLname());
+        contentValues.put(Col_4, studentmodel.getStudentAddress());
+        contentValues.put(Col_5, studentmodel.getStudentGender());
+        contentValues.put(Col_6, studentmodel.getStudentnumber());
+        contentValues.put(Col_7, studentmodel.getParentnumber());
+
+        int status= db.update(TABLE_NAME,contentValues,Col_1 +" =?",new String[]{ String.valueOf(studentmodel.getStudentId())});
+
+        db.close();
+        return status;
+
     }
 }
+
+

@@ -30,7 +30,7 @@ public class Student_Managment extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openViewDeleteStudent();
+                openViewStudent();
             }
         });
     }
@@ -42,9 +42,9 @@ public class Student_Managment extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openViewDeleteStudent()
+    public void openViewStudent()
     {
-        Intent intent = new Intent(this,viewAndDeleteStudent.class);
+        Intent intent = new Intent(this,viewStudent.class);
         startActivity(intent);
     }
 }

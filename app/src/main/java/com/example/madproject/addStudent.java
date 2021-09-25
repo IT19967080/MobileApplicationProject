@@ -11,7 +11,7 @@ import android.widget.Toast;
 public class addStudent extends AppCompatActivity {
 
     private databaseHelper_Student stu_Db;
-    private EditText editFname,editLname,editAddress,editGender,editPnumber,editParentPnumber;
+    private EditText addFname,addLname,addAddress,addGender,addPnumber,addParentPnumber;
     private Button addButton;
 
     @Override
@@ -20,12 +20,12 @@ public class addStudent extends AppCompatActivity {
         setContentView(R.layout.activity_add_student);
 
         stu_Db = new databaseHelper_Student(this);
-        editFname = (EditText) findViewById(R.id.stu_add_fname2);
-        editLname = (EditText) findViewById(R.id.stu_add_lname2);
-        editAddress = (EditText) findViewById(R.id.stu_add_address2);
-        editGender = (EditText) findViewById(R.id.stu_add_gender2);
-        editPnumber = (EditText) findViewById(R.id.stu_add_number2);
-        editParentPnumber = (EditText) findViewById(R.id.stu_add_parent_numbr2);
+        addFname = (EditText) findViewById(R.id.stu_add_fname2);
+        addLname = (EditText) findViewById(R.id.stu_add_lname2);
+        addAddress = (EditText) findViewById(R.id.stu_add_address2);
+        addGender = (EditText) findViewById(R.id.stu_add_gender2);
+        addPnumber = (EditText) findViewById(R.id.stu_add_number2);
+        addParentPnumber = (EditText) findViewById(R.id.stu_add_parent_numbr2);
         addButton = (Button) findViewById(R.id.stu_add_submit_button);
         insertStudent();
 
@@ -37,9 +37,9 @@ public class addStudent extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        boolean isInserted = stu_Db.insertStudent(editFname.getText().toString(),editLname.getText().toString(),
-                                editAddress.getText().toString(),editGender.getText().toString(),
-                                editPnumber.getText().toString(),editParentPnumber.getText().toString());
+                        boolean isInserted = stu_Db.insertStudent(addFname.getText().toString(),addLname.getText().toString(),
+                                addAddress.getText().toString(),addGender.getText().toString(),
+                                addPnumber.getText().toString(),addParentPnumber.getText().toString());
                         if (isInserted = true)
                             Toast.makeText(addStudent.this,"Student Added",Toast.LENGTH_LONG).show();
                         else

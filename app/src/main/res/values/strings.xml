@@ -51,8 +51,11 @@
     <string name="pt_kaddress">Enter Address</string>
     <string name="btn_ksubmit">Submit</string>
     <string name="btn_kback2">Back</string>
+
+
     <string name="c_stu_topic">Student Management</string>
     <string name="c_stu_addbutton">ADD STUDENT</string>
+    <string name="c_stu_edittext">Edit STUDENT</string>
     <string name="c_stu_viewbutton">VIEW STUDENT</string>
     <string name="c_stu_fname">First Name</string>
     <string name="c_stu_lname">Last Name</string>
@@ -61,11 +64,12 @@
     <string name="c_stu_number">Phone Number</string>
     <string name="c_stu_paren_number">Parent/Guardian Number</string>
     <string name="c_stu_submitbutton">Submit</string>
+    <string name="c_stu_edittbutton">Edit</string>
     <string name="c_stu_deletebutton">DELETE STUDENT</string>
     <string name="c_stu_search">Search the Student name</string>
     <string name="c_stu_search2">Search</string>
     <string name="c_stu_delete2">DELETE</string>
-    <string name="c_stu_viewandDelete">VIEW/DELETE STUDENT</string>
+    <string name="c_stu_viewandDelete">Student Details</string>
     <string name="c_stu_profile">STUDENT PROFILE</string>
     <string name="c_static_aboutus">ABOUT US</string>
     <string name="c_about_mission">Our Mission</string>
@@ -117,6 +121,15 @@
     <string name="N_H_htviewid">"    MBN 045"</string>
     <string name="N_H_htviewteacher">"    K.Gayan / H.Kanishka"</string>
     <string name="rschedule_btn_classfee">Class Fee</string>
+    <string name="title_activity_edit_student">EditStudent</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>
 
 
