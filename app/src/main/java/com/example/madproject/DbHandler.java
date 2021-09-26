@@ -91,6 +91,7 @@ public class  DbHandler extends SQLiteOpenHelper {
 
 
     //calculation
+
     public int countHall(){
         SQLiteDatabase db= getReadableDatabase();
         String query= "SELECT * FROM "+ TABLE_NAME;
@@ -141,7 +142,8 @@ public class  DbHandler extends SQLiteOpenHelper {
     public HallModel getSingleHallModel(int id){
         SQLiteDatabase db= getWritableDatabase();
 
-      Cursor cursor=  db.query(TABLE_NAME,new String[]{ID,HALL_ID,CAPACITY,AC,HALL_MANAGER,TEACHER,STARTED,FINISHED},ID + "= ?",new String[]{String.valueOf(id)},null,null,null);
+      Cursor cursor=  db.query(TABLE_NAME,new String[]{ID,HALL_ID,CAPACITY,AC,HALL_MANAGER,TEACHER,STARTED,FINISHED},
+              ID + "= ?",new String[]{String.valueOf(id)},null,null,null);
 
       HallModel hallModel;
       if(cursor != null){

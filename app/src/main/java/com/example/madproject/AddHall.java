@@ -47,10 +47,6 @@ public class AddHall extends AppCompatActivity {
 
         dbHandler= new DbHandler(context);
 
-
-
-
-
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,26 +58,21 @@ public class AddHall extends AppCompatActivity {
              String userTeacher= teacher.getText().toString();
              long started= System.currentTimeMillis();
 
-                isAllFieldsChecked = CheckAllFields();
-
-
+             isAllFieldsChecked = CheckAllFields();
 
              //model class object create
-
-
-
-                if (isAllFieldsChecked) {
+             if (isAllFieldsChecked) {
 
                     HallModel hallModel= new HallModel(userHallId,userCapacity,userAc,userHallManager,userTeacher,started,0);
                     dbHandler.addHall(hallModel);
 
                     startActivity(new Intent(context,MainActivityHallList.class));
                     Toast.makeText(getApplicationContext(),"Hall Added",Toast.LENGTH_SHORT).show();
-                }
+                }else{
+                 Toast.makeText(getApplicationContext(),"Hall Not Added",Toast.LENGTH_SHORT).show();
+             }
               //  startActivity(new Intent(context,MainActivityHallList.class));
-
             }
-
             private boolean CheckAllFields() {
                 if (hallId.length() == 0) {
                     hallId.setError("This field is required");
