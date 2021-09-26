@@ -50,6 +50,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        imageView= findViewById(R.id.imageView21);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i= new Intent(getApplicationContext(),Student_Managment.class);
+                startActivity(i);
+            }
+        });
 
 
 

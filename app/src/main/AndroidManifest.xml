@@ -23,10 +23,9 @@
         <activity android:name=".incomecal" />
         <activity android:name=".Student_Managment" />
         <activity android:name=".ClassManagement" />
+
         <activity android:name=".MainActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-            </intent-filter>
+
         </activity>
 
         <activity android:name=".update_teacher">
@@ -34,7 +33,10 @@
 
         <activity android:name=".Gallery_Home" />
         <activity android:name=".Welcome_Sign" >
-
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
 
