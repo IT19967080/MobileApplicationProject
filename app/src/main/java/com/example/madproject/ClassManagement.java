@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.basgeekball.awesomevalidation.AwesomeValidation;
@@ -22,6 +23,7 @@ public class ClassManagement extends AppCompatActivity {
 
     EditText ed1,ed2,ed3,ed4,ed5;
     Button b1,b2;
+    ImageView img1;
     AwesomeValidation awesomeValidation;
 
     @Override
@@ -31,6 +33,14 @@ public class ClassManagement extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();//this line hides the action bar
         setContentView(R.layout.activity_class_management);
+        img1 = findViewById(R.id.back_button);
+        img1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ClassManagement.this,ClassIntroActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
         awesomeValidation = new AwesomeValidation(BASIC);

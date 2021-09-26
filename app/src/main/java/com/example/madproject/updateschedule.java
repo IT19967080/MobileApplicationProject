@@ -11,12 +11,14 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class updateschedule extends AppCompatActivity {
 
     EditText ed1,ed2,ed3,ed4,ed5,ed6;
     Button b1,b2,b3;
+    ImageView img1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +33,7 @@ public class updateschedule extends AppCompatActivity {
         ed4 = findViewById(R.id.duration);
         ed5 = findViewById(R.id.startingtime);
         ed6 = findViewById(R.id.id);
-
+        img1 = findViewById(R.id.back_button);
 
         b1 = findViewById(R.id.btnadd);
         b2 = findViewById(R.id.btnview);
@@ -51,6 +53,15 @@ public class updateschedule extends AppCompatActivity {
         ed3.setText(t5);
         ed4.setText(t4);
         ed5.setText(t6);
+
+        img1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(updateschedule.this,view_schedule.class);
+                startActivity(intent);
+            }
+        });
+
 
         b3.setOnClickListener(new View.OnClickListener() {
             @Override

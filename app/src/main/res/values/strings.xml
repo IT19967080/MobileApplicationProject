@@ -8,9 +8,9 @@
     <string name="err_classId">Enter valid Class ID</string>
     <string name="err_teachername">Enter valid Name</string>
     <string name="err_classday">Enter valid day</string>
-    <string name="err_duration">Enter valid duration</string>
+    <string name="err_duration">Enter valid range 1 to 10</string>
     <string name="err_startingtime">Enter valid time</string>
-    <string name="err_teachersal">Enter valid salary</string>
+    <string name="err_teachersal">Enter value > 5000</string>
     <string name="errteacherid">Enter valid teacher name</string>
     <string name="errcompanyprofit">Enter valid Comapnyprofit</string>
     <string name="errnetsalary">Enter valid net salary</string>

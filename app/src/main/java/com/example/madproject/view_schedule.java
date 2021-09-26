@@ -12,6 +12,7 @@ import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.AdapterViewAnimator;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -21,6 +22,7 @@ public class view_schedule extends AppCompatActivity {
     ListView lst1;
     ArrayList<String> titles = new ArrayList<String>();
     ArrayAdapter arrayAdapter;
+    ImageView img1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,16 @@ public class view_schedule extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();//this line hides the action bar
         setContentView(R.layout.activity_view_schedule);
+        img1 = findViewById(R.id.back_button);
+        img1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(view_schedule.this,ClassManagement.class);
+                startActivity(intent);
+            }
+        });
+
+
 
         SQLiteDatabase db = openOrCreateDatabase("management", Context.MODE_PRIVATE,null);
         lst1 = findViewById(R.id.lst1);
