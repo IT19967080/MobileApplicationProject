@@ -24,3 +24,19 @@ public class ExampleInstrumentedTest {
         assertEquals("com.example.madproject", appContext.getPackageName());
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -46,6 +46,20 @@ public class Hall_Management_Home extends AppCompatActivity {
                 startActivity(k);
             }
         });
+        imageView= findViewById(R.id.c4);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+           public void onClick(View v) {
+                Intent h= new Intent(getApplicationContext(),Hall_TeacherList.class);startActivity(h);
+           }
+       });
+        imageView= findViewById(R.id.imageView4);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent h= new Intent(getApplicationContext(),MainActivity.class);startActivity(h);
+            }
+        });
 
 
 

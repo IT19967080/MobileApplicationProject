@@ -7,9 +7,15 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
+
+import com.basgeekball.awesomevalidation.AwesomeValidation;
+import com.basgeekball.awesomevalidation.ValidationStyle;
+import com.basgeekball.awesomevalidation.utility.RegexTemplate;
 
 public class AddHall extends AppCompatActivity {
 
@@ -18,12 +24,29 @@ public class AddHall extends AppCompatActivity {
     private DbHandler dbHandler;
     private Context context;
 
+    ImageView imageView;
+
+
+    boolean isAllFieldsChecked = false;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_hall);
+
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getSupportActionBar().hide();
+        setContentView(R.layout.activity_add_hall);
+
+        imageView= findViewById(R.id.imageView4);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i= new Intent(getApplicationContext(),Hall_Management_Home.class);
+                startActivity(i);
+            }
+        });
 
         hallId= findViewById(R.id.editText_hallid);
         capacity= findViewById(R.id.editText_capacity);
@@ -47,24 +70,51 @@ public class AddHall extends AppCompatActivity {
              String userTeacher= teacher.getText().toString();
              long started= System.currentTimeMillis();
 
-
+             isAllFieldsChecked = CheckAllFields();
 
              //model class object create
-                HallModel hallModel= new HallModel(userHallId,userCapacity,userAc,userHallManager,userTeacher,started,0);
-                dbHandler.addHall(hallModel);
+             if (isAllFieldsChecked) {
 
+                    HallModel hallModel= new HallModel(userHallId,userCapacity,userAc,userHallManager,userTeacher,started,0);
+                    dbHandler.addHall(hallModel);
 
-                startActivity(new Intent(context,MainActivityHallList.class));
+                    startActivity(new Intent(context,MainActivityHallList.class));
+                    Toast.makeText(getApplicationContext(),"Hall Added",Toast.LENGTH_SHORT).show();
+                }else{
+                 Toast.makeText(getApplicationContext(),"Hall Not Added",Toast.LENGTH_SHORT).show();
+             }
+              //  startActivity(new Intent(context,MainActivityHallList.class));
+            }
+            private boolean CheckAllFields() {
+                if (hallId.length() == 0) {
+                    hallId.setError("This field is required");
+                    return false;
+                }
 
+                if (capacity.length() >4) {
+                    capacity.setError("Hall Capacity Maximum 1000");
+                    return false;
+                }
+
+                if (ac.length() == 0) {
+                    ac.setError("This field is required");
+                    return false;
+                }
+
+                if (hallManager.length() == 0) {
+                    hallManager.setError("This field is required");
+                    return false;
+                } else if (teacher.length() ==0) {
+                    teacher.setError("This field is required");
+                    return false;
+                }
+                return true;
             }
 
         });
 
     }
-    public void showToast(View view) {
-        Toast toast= Toast.makeText(getApplicationContext(),"Hall Added!",Toast.LENGTH_SHORT);
-        toast.show();
-    }
+
 
 }
 

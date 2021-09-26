@@ -12,44 +12,33 @@
         <activity android:name=".Hall_Management_Home"/>
         <activity android:name=".EditStudent" />
 
-
-
+        <activity android:name=".Hall_TeacherList"></activity>
 
 
 
         <activity
             android:name=".class_payements"
-            android:exported="true">
-
-
-        </activity>
-        <activity android:name=".Hall_Managment">
-
-
-        </activity>
-        <activity android:name=".incomecal" ></activity>
-
-        <activity android:name=".Student_Managment">
-
-        </activity>
-
-        <activity android:name=".ClassManagement"></activity>
-        <activity android:name=".MainActivity">
+            android:exported="true" />
+        <activity android:name=".Hall_Managment" />
+        <activity android:name=".incomecal" />
+        <activity android:name=".Student_Managment" />
+        <activity android:name=".ClassManagement" />
+        <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>>
-        <activity android:name=".update_teacher">
-
-
-
         </activity>
-            android:exported="true" />
+
+        <activity android:name=".update_teacher">
+        </activity>
 
         <activity android:name=".Gallery_Home" />
-        <activity android:name=".Welcome_Sign" />
+        <activity android:name=".Welcome_Sign" >
+
+        </activity>
+
+
+
         <activity android:name=".EditHall" />
         <activity android:name=".AddHall" />
         <activity android:name=".MainActivityHallList" />
