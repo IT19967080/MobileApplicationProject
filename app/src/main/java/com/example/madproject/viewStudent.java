@@ -68,7 +68,12 @@ public class viewStudent extends AppCompatActivity {
                     builder.setNegativeButton("Delete", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
-                            stu_Db.deleteStudent(studentmodel.getStudentId());
+                            try {
+                                stu_Db.deleteStudent(studentmodel.getStudentId());
+                            } catch(Exception ex) {
+                                Toast.makeText(viewStudent.this,"Couldn't delete the student",Toast.LENGTH_LONG).show();
+                                ex.printStackTrace();
+                            }
                             startActivity(new Intent(context, viewStudent.class));
 
                         }

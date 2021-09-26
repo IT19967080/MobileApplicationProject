@@ -57,7 +57,7 @@ public class EditStudent extends AppCompatActivity {
                 String ParentNumberText= editParentPnumber.getText().toString();
                 updateStu = System.currentTimeMillis();
 
-                StudentModel studentModel=new StudentModel(id,FnameText,LnameText,AddressText,GenderText,NumberText,ParentNumberText,updateStu,0);
+                StudentModel studentModel=new StudentModel(Integer.parseInt(id),FnameText,LnameText,AddressText,GenderText,NumberText,ParentNumberText,updateStu,0);
 
                 int state= stu_Db.updateStudent(studentModel);
                 System.out.println(state);

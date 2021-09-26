@@ -1,12 +1,12 @@
 package com.example.madproject;
 
 public class StudentModel {
-    private String id;
+    private int id;
     private String fname,lname,address,gender,pnumber,parentPnumber;
     private long started, finished;
 
 
-    public StudentModel(String id,String fname,String lname,String address,String gender,String pnumber,String parentPnumber,long started, long finished) {
+    public StudentModel(int id,String fname,String lname,String address,String gender,String pnumber,String parentPnumber,long started, long finished) {
         this.id = id;
         this.fname = fname;
         this.lname = lname;
@@ -24,11 +24,11 @@ public class StudentModel {
     }
 
 
-    public String getStudentId() {
+    public int getStudentId() {
         return id;
     }
 
-    public void setStudentId(String id) {
+    public void setStudentId(int id) {
         this.id = id;
     }
 

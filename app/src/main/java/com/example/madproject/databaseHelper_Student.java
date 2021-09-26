@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,7 +37,7 @@ public class databaseHelper_Student extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
 
-        db.execSQL("CREATE TABLE student_table ( id String PRIMARY KEY AUTOINCREMENT,First_Name TEXT, Last_Name TEXT, Address TEXT, Gender TEXT, Phone_Number NUMBER, Parents_Guardians_Number NUMBER)");
+        db.execSQL("CREATE TABLE student_table ( id Integer PRIMARY KEY AUTOINCREMENT,First_Name TEXT, Last_Name TEXT, Address TEXT, Gender TEXT, Phone_Number NUMBER, Parents_Guardians_Number NUMBER)");
 
     }
 
@@ -81,12 +82,12 @@ public class databaseHelper_Student extends SQLiteOpenHelper {
                 //create new hall object
                 StudentModel studentModel= new StudentModel();
 
-                studentModel.setStudentFname(cursor.getString(0));
-                studentModel.setStudentLname(cursor.getString(1));
-                studentModel.setStudentAddress(cursor.getString(2));
-                studentModel.setStudentGender(cursor.getString(3));
-                studentModel.setStudentnumber(cursor.getString(4));
-                studentModel.setParentnumber(cursor.getString(5));
+                studentModel.setStudentFname(cursor.getString(1));
+                studentModel.setStudentLname(cursor.getString(2));
+                studentModel.setStudentAddress(cursor.getString(3));
+                studentModel.setStudentGender(cursor.getString(4));
+                studentModel.setStudentnumber(cursor.getString(5));
+                studentModel.setParentnumber(cursor.getString(6));
 
                 studentModels.add(studentModel);
             }while (cursor.moveToNext());
@@ -106,7 +107,7 @@ public class databaseHelper_Student extends SQLiteOpenHelper {
             cursor.moveToFirst();
 
             studentModel = new StudentModel(
-                    cursor.getString(0),
+                    cursor.getInt(0),
                     cursor.getString(1),
                     cursor.getString(2),
                     cursor.getString(3),
@@ -124,10 +125,10 @@ public class databaseHelper_Student extends SQLiteOpenHelper {
     }
 
     //delete student
-    public void deleteStudent(String id){
-        SQLiteDatabase db = this.getWritableDatabase();
-        db.delete(TABLE_NAME,id+" =?",new String[]{String.valueOf(id)});
-        db.close();
+    public void deleteStudent(int id){
+            SQLiteDatabase db = this.getWritableDatabase();
+            db.delete(TABLE_NAME, Col_1+"=?", new String[]{String.valueOf(id)});
+            db.close();
     }
 
     //update student
@@ -143,7 +144,7 @@ public class databaseHelper_Student extends SQLiteOpenHelper {
         contentValues.put(Col_6, studentmodel.getStudentnumber());
         contentValues.put(Col_7, studentmodel.getParentnumber());
 
-        int status= db.update(TABLE_NAME,contentValues,Col_1 +" =?",new String[]{ String.valueOf(studentmodel.getStudentId())});
+        int status= db.update(TABLE_NAME,contentValues, "id =?",new String[]{ String.valueOf(studentmodel.getStudentId())});
 
         db.close();
         return status;
