@@ -25,6 +25,8 @@ public class MainActivityHallList extends AppCompatActivity {
     private TextView count;
     Context context;
 
+    ImageView imageView;
+
     private DbHandler dbHandler;
 
     private List<HallModel> hallModels;
@@ -37,6 +39,15 @@ public class MainActivityHallList extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_main_hall_list);
+
+        imageView= findViewById(R.id.imageView4);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i= new Intent(getApplicationContext(),Hall_Management_Home.class);
+                startActivity(i);
+            }
+        });
 
         context=this;
         dbHandler= new DbHandler(context);

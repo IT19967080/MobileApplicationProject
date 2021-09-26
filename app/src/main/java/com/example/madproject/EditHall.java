@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class EditHall extends AppCompatActivity {
@@ -17,6 +18,8 @@ public class EditHall extends AppCompatActivity {
     private DbHandler dbHandler;
     private Context context;
     private Long updateDate;
+
+    ImageView imageView;
 
     boolean isAllFieldsChecked = false;
 
@@ -28,6 +31,16 @@ public class EditHall extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_edit_hall);
+
+        //imageView10
+        imageView= findViewById(R.id.imageView10);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i= new Intent(getApplicationContext(),MainActivityHallList.class);
+                startActivity(i);
+            }
+        });
 
         context= this;
         dbHandler= new DbHandler(context);

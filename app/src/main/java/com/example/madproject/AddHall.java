@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.basgeekball.awesomevalidation.AwesomeValidation;
@@ -23,6 +24,8 @@ public class AddHall extends AppCompatActivity {
     private DbHandler dbHandler;
     private Context context;
 
+    ImageView imageView;
+
 
     boolean isAllFieldsChecked = false;
 
@@ -35,6 +38,15 @@ public class AddHall extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_add_hall);
+
+        imageView= findViewById(R.id.imageView4);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i= new Intent(getApplicationContext(),Hall_Management_Home.class);
+                startActivity(i);
+            }
+        });
 
         hallId= findViewById(R.id.editText_hallid);
         capacity= findViewById(R.id.editText_capacity);

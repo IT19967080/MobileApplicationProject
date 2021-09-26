@@ -12,7 +12,7 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageView img1,img2;
+    ImageView img1,img2,imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +30,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,ClassIntroActivity.class);
                 startActivity(intent);
+            }
+        });
+        imageView= findViewById(R.id.imageView24);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i= new Intent(getApplicationContext(),Hall_Management_Home.class);
+                startActivity(i);
             }
         });
 

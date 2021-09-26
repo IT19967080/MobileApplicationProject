@@ -11,11 +11,7 @@
         android:theme="@style/Theme.Madproject">
         <activity android:name=".Hall_TeacherList"></activity>
         <activity android:name=".Hall_Management_Home">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".class_payements"
@@ -25,7 +21,11 @@
         <activity android:name=".Student_Managment" />
         <activity android:name=".ClassManagement" />
         <activity android:name=".MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".update_teacher" />
         <activity android:name=".Gallery_Home" />
