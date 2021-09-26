@@ -285,4 +285,3 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_ksview2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-

@@ -18,6 +18,7 @@
             android:name=".class_payements"
             android:exported="true">
 
+
         </activity>
         <activity android:name=".Hall_Managment">
 
@@ -25,7 +26,9 @@
         </activity>
         <activity android:name=".incomecal" ></activity>
 
-        <activity android:name=".Student_Managment"></activity>
+        <activity android:name=".Student_Managment">
+
+        </activity>
 
         <activity android:name=".ClassManagement"></activity>
         <activity android:name=".MainActivity">
@@ -53,9 +56,23 @@
         <activity android:name=".view_teachers" />
         <activity android:name=".navigationDrawer" />
         <activity android:name=".aboutUs" />
-        <activity android:name=".addStudent" />
+        <activity android:name=".addStudent" >
+
+
+
+
+        </activity>
+
         <activity android:name=".viewAndDeleteStudent" />
-        <activity android:name=".TeacherManagement" />
+        <activity android:name=".TeacherManagement" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
 
 
 
@@ -66,8 +83,16 @@
         <activity android:name=".studentProfile" />
 
         <activity android:name=".Registration_page" />
-        <activity android:name=".login_page" />
-        <activity android:name=".Add_Teacher" />
+        <activity android:name=".login_page" >
+
+
+
+
+        </activity>
+        <activity android:name=".Add_Teacher" >
+
+
+        </activity>
 
 
 
