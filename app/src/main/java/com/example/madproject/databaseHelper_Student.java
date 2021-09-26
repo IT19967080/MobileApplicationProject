@@ -25,6 +25,7 @@ public class databaseHelper_Student extends SQLiteOpenHelper {
     public static final String Col_5 = "Gender";
     public static final String Col_6 = "Phone_Number";
     public static final String Col_7 = "Parents_Guardians_Number";
+    public static final String Col_8 = "Monthly Fee";
 
 
     //database creation method
@@ -52,6 +53,7 @@ public class databaseHelper_Student extends SQLiteOpenHelper {
 
     //data insert method
     public boolean insertStudent(String fname, String lname, String address, String gender, String pnumber, String parentPnumber) {
+
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(Col_2,fname);

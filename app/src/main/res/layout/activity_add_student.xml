@@ -201,7 +201,6 @@
         android:layout_marginLeft="16dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintBaseline_toBaselineOf="@+id/stu_add_gender1"
         app:layout_constraintStart_toEndOf="@+id/stu_add_gender1" />
 
