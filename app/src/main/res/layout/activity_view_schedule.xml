@@ -30,7 +30,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView7"
+            android:id="@+id/back_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -48,12 +48,19 @@
         android:id="@+id/textView18"
         android:layout_width="match_parent"
         android:layout_height="61dp"
-        android:text="View schedules" />
+        android:gravity="center"
+        android:text="View schedules"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ListView
+        android:id="@+id/lst1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/lst1"
 
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </LinearLayout>
