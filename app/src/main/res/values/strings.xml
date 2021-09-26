@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Madproject</string>
-    <string name="rsalary_teacherID">Enter Teacher ID</string>
+    <string name="rsalary_teacherID">Enter Teacher Name</string>
     <string name="rsalary_Teacher_sal">Enter Teacher Salary</string>
     <string name="rsalarycompanypayment">Company Payment</string>
     <string name="rsalaryteacher_netsal">Teacher Net Salary</string>
@@ -11,7 +11,7 @@
     <string name="err_duration">Enter valid duration</string>
     <string name="err_startingtime">Enter valid time</string>
     <string name="err_teachersal">Enter valid salary</string>
-    <string name="errteacherid">Enter valid teacherID</string>
+    <string name="errteacherid">Enter valid teacher name</string>
     <string name="errcompanyprofit">Enter valid Comapnyprofit</string>
     <string name="errnetsalary">Enter valid net salary</string>
 
@@ -27,7 +27,7 @@
     <string name="rschedule_classID">Enter Class ID</string>
     <string name="rschedule_teachername">Enter Teacher Name</string>
     <string name="rschedule_classday">Enter Class Day</string>
-    <string name="rschedule_duration">Enter duration</string>
+    <string name="rschedule_duration">Enter duration(Hrs)</string>
     <string name="rschedule_starttime">Enter Starting Time</string>
     <string name="title_classManagemet">Nilwala Education</string>
     <string name="dashboardhall">Hall Management</string>

@@ -50,7 +50,6 @@ public class view_schedule extends AppCompatActivity {
         if(c.moveToFirst())
         {
             do{
-
                 classmanage cls = new classmanage();
                 cls.id = c.getString(id);
                 cls.classid = c.getString(classid);
@@ -66,8 +65,6 @@ public class view_schedule extends AppCompatActivity {
             } while(c.moveToNext());
             arrayAdapter.notifyDataSetChanged();
             lst1.invalidateViews();
-
-
         }
 
         lst1.setOnItemClickListener(new AdapterView.OnItemClickListener() {

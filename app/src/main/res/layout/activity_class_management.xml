@@ -123,7 +123,7 @@
         android:layout_marginTop="80dp"
         android:text="@string/rpbtn_1"
         android:textColor="@color/black"
-        app:backgroundTint="@color/colourgreen"
+        app:backgroundTint="@color/lightgreen"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
@@ -135,7 +135,7 @@
         android:layout_marginLeft="24dp"
         android:text="@string/rpbtn_2"
         android:textColor="@color/black"
-        app:backgroundTint="@color/colourgreen"
+        app:backgroundTint="@color/lightgreen"
         app:layout_constraintBaseline_toBaselineOf="@+id/btnadd"
         app:layout_constraintStart_toEndOf="@+id/btnadd" />
 
@@ -220,7 +220,7 @@
         android:id="@+id/constraintLayout2"
         android:layout_width="417dp"
         android:layout_height="82dp"
-        android:background="@color/colourgreen"
+        android:background="@color/lightgreen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">

@@ -31,6 +31,8 @@ public class ClassManagement extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();//this line hides the action bar
         setContentView(R.layout.activity_class_management);
+
+
         awesomeValidation = new AwesomeValidation(BASIC);
 
 
@@ -73,19 +75,13 @@ public class ClassManagement extends AppCompatActivity {
 
     }
     public void insert() {
-
-
-
-
         if (awesomeValidation.validate()) {
             try {
-
                 String classid = ed1.getText().toString();
                 String teachername = ed2.getText().toString();
                 String day = ed3.getText().toString();
                 String duration = ed4.getText().toString();
                 String time = ed5.getText().toString();
-
 
                 SQLiteDatabase db = openOrCreateDatabase("management", Context.MODE_PRIVATE, null);
                 db.execSQL("CREATE TABLE IF NOT EXISTS records(id INTEGER PRIMARY KEY AUTOINCREMENT,classid VARCHAR,teachername VARCHAR,day VARCHAR,duration VARCHAR,time VARCHAR)");
@@ -98,7 +94,7 @@ public class ClassManagement extends AppCompatActivity {
                 statement.bindString(4, duration);
                 statement.bindString(5, time);
                 statement.execute();
-                Toast.makeText(this, "Record addded", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Schedule addded", Toast.LENGTH_LONG).show();
 
                 ed1.setText("");
                 ed2.setText("");
@@ -108,16 +104,12 @@ public class ClassManagement extends AppCompatActivity {
                 ed1.requestFocus();
 
             } catch (Exception ex) {
-                Toast.makeText(this, "Record is notaddded", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Schedule is not addded", Toast.LENGTH_LONG).show();
                 ex.printStackTrace();
             }
         }
         else{
             Toast.makeText(this, "Validation failed", Toast.LENGTH_LONG).show();
         }
-
     }
-
-
-
 }

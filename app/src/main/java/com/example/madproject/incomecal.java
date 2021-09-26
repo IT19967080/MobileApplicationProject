@@ -41,7 +41,7 @@ public incomecal(){
         btn2 = findViewById(R.id.btn_sal2);
 
         awesomeValidation.addValidation(incomecal.this, R.id.teacher_sal, Range.closed(5000.0f, 1000000000f), R.string.err_teachersal);
-        awesomeValidation.addValidation(incomecal.this, R.id.teacher_id, "[A-Z0-9\\s]+", R.string.errteacherid);
+        awesomeValidation.addValidation(incomecal.this, R.id.teacher_id, "[A-Za-z\\s]+", R.string.errteacherid);
 
 
 
@@ -53,15 +53,13 @@ public incomecal(){
 
 
                 if(TextUtils.isEmpty(ed1.getText().toString())){
-                    ed1.setError("Teacher id is compulsory");
+                    ed1.setError("Teacher name is compulsory");
                     return ;
                 }
                 if(TextUtils.isEmpty(ed2.getText().toString())){
                     ed2.setError("Teacher sal is compulsory");
                     return ;
                 }
-
-
 
                 if(awesomeValidation.validate()){
                 double netsalary ;
@@ -76,10 +74,10 @@ public incomecal(){
                 netsalary = calculateNetsalary(salary,company_profit);
 
                 ed4.setText(String.valueOf(netsalary));
-                    Toast.makeText(incomecal.this,"Validation Success",Toast.LENGTH_LONG).show();
+                    Toast.makeText(incomecal.this,"Calculation Success",Toast.LENGTH_LONG).show();
                 }
                 else{
-                   Toast.makeText(incomecal.this,"Validation Failed",Toast.LENGTH_LONG).show();
+                   Toast.makeText(incomecal.this,"Calculation Failed",Toast.LENGTH_LONG).show();
                 }
             }
         });

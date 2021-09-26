@@ -89,7 +89,7 @@ public class updateschedule extends AppCompatActivity {
 
             statement.bindString(1,id);
             statement.execute();
-            Toast.makeText(this,"Record is Deleted",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"Schedule is Deleted",Toast.LENGTH_LONG).show();
 
             ed1.setText("");
             ed2.setText("");
@@ -101,7 +101,7 @@ public class updateschedule extends AppCompatActivity {
 
         }
         catch(Exception ex){
-            Toast.makeText(this,"Record is not Deleted",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"Schedule is not Deleted",Toast.LENGTH_LONG).show();
             ex.printStackTrace();
         }
     }
@@ -117,7 +117,6 @@ public class updateschedule extends AppCompatActivity {
             String time = ed5.getText().toString();
             String id = ed6.getText().toString();
 
-
             SQLiteDatabase db = openOrCreateDatabase("management", Context.MODE_PRIVATE,null);
 
             String sql = "update records set classid = ?,teachername = ?, day= ? , duration = ? , time = ? where id = ?";
@@ -129,7 +128,7 @@ public class updateschedule extends AppCompatActivity {
             statement.bindString(5,time);
             statement.bindString(6,id);
             statement.execute();
-            Toast.makeText(this,"Record is updated",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"Schedule is updated",Toast.LENGTH_LONG).show();
 
             ed1.setText("");
             ed2.setText("");
@@ -141,7 +140,7 @@ public class updateschedule extends AppCompatActivity {
 
         }
         catch(Exception ex){
-            Toast.makeText(this,"Record is not updated",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"Schedule is not updated",Toast.LENGTH_LONG).show();
             ex.printStackTrace();
         }
     }
