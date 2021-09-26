@@ -99,7 +99,8 @@ public class Add_Teacher extends AppCompatActivity {
                     buffer.append("Contact Num :"+res.getString(1)+"\n");
                     buffer.append("Subject :"+res.getString(2)+"\n");
                     buffer.append("National ID :"+res.getString(3)+"\n");
-                    buffer.append("Address :"+res.getString(4)+"\n\n\n");
+                    buffer.append("Address :"+res.getString(4)+"\n\n");
+                    buffer.append("-------------------------------------------------------------------"+"\n\n");
                 }
                 AlertDialog.Builder builder=new AlertDialog.Builder(Add_Teacher.this);
                 builder.setCancelable(true);

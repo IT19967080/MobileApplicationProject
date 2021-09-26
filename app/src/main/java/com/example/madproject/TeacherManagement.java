@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class TeacherManagement extends AppCompatActivity {
 
-    Button button;
+    Button button,button2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +21,10 @@ public class TeacherManagement extends AppCompatActivity {
         setContentView(R.layout.activity_teacher_management);
 
         button = findViewById(R.id.btn_addteachers);
+        button2=findViewById(R.id.btn_salary);
+
+
+
         button.setOnClickListener(new View.OnClickListener(){
 
             @Override
@@ -29,5 +33,19 @@ public class TeacherManagement extends AppCompatActivity {
                 startActivity(c);
             }
         });
+
+        button2.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent c= new Intent(getApplicationContext(),incomecal.class);
+                startActivity(c);
+            }
+        });
+
+
+
+
+
     }
 }
