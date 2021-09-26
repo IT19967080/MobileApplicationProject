@@ -9,9 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Madproject">
-        <activity android:name=".Hall_Management_Home">
+        <activity android:name=".Hall_Management_Home"/>
+        <activity android:name=".EditStudent" />
 
-        </activity>
+
+
+
 
 
         <activity
@@ -43,62 +46,26 @@
 
 
         </activity>
+            android:exported="true" />
+
         <activity android:name=".Gallery_Home" />
         <activity android:name=".Welcome_Sign" />
         <activity android:name=".EditHall" />
         <activity android:name=".AddHall" />
-        <activity android:name=".MainActivityHallList"></activity>
+        <activity android:name=".MainActivityHallList" />
         <activity android:name=".view_schedule" />
         <activity android:name=".updateschedule" />
         <activity android:name=".ClassIntroActivity" />
-
-
         <activity android:name=".view_teachers" />
         <activity android:name=".navigationDrawer" />
         <activity android:name=".aboutUs" />
-        <activity android:name=".addStudent" >
-
-
-
-
-        </activity>
-
-        <activity android:name=".viewAndDeleteStudent" />
-        <activity android:name=".TeacherManagement" >
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-
-
-
-
-
-
-
+        <activity android:name=".addStudent" />
+        <activity android:name=".viewStudent" />
+        <activity android:name=".TeacherManagement" />
         <activity android:name=".studentProfile" />
-
         <activity android:name=".Registration_page" />
-        <activity android:name=".login_page" >
-
-
-
-
-        </activity>
-        <activity android:name=".Add_Teacher" >
-
-
-        </activity>
-
-
-
-
-
-
+        <activity android:name=".login_page" />
+        <activity android:name=".Add_Teacher" />
 
     </application>
 

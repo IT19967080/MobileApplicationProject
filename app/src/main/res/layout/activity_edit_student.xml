@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/wp4"
-    tools:context=".addStudent">
+    tools:context=".EditStudent">
 
     <TextView
-        android:id="@+id/stu_add_lname1"
+        android:id="@+id/stu_edit_lname1"
         android:layout_width="111dp"
         android:layout_height="44dp"
         android:layout_marginStart="16dp"
@@ -16,21 +16,21 @@
         android:layout_marginTop="15dp"
         android:text="@string/c_stu_lname"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/stu_add_fname1" />
+        app:layout_constraintTop_toBottomOf="@+id/stu_edit_fname1" />
 
     <EditText
-        android:id="@+id/stu_add_fname2"
+        android:id="@+id/stu_edit_fname2"
         android:layout_width="172dp"
         android:layout_height="44dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBaseline_toBaselineOf="@+id/stu_add_fname1"
-        app:layout_constraintStart_toEndOf="@+id/stu_add_fname1" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/stu_edit_fname1"
+        app:layout_constraintStart_toEndOf="@+id/stu_edit_fname1" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/stu_about_layout"
+        android:id="@+id/stu_about_layout_edit"
         android:layout_width="409dp"
         android:layout_height="72dp"
         android:background="@color/design_default_color_error"
@@ -39,7 +39,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
-            android:id="@+id/stu_about_back"
+            android:id="@+id/stu_about_back_edit"
             android:layout_width="55dp"
             android:layout_height="46dp"
             android:layout_marginStart="5dp"
@@ -51,7 +51,7 @@
             app:srcCompat="@drawable/backarrow" />
 
         <TextView
-            android:id="@+id/stu_about_title"
+            android:id="@+id/stu_about_title_edit"
             android:layout_width="220dp"
             android:layout_height="46dp"
             android:layout_marginStart="55dp"
@@ -62,12 +62,12 @@
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/stu_about_back"
+            app:layout_constraintStart_toEndOf="@+id/stu_about_back_edit"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/stu_add_topic"
+        android:id="@+id/stu_add_topic_edit"
         android:layout_width="377dp"
         android:layout_height="55dp"
         android:layout_marginStart="16dp"
@@ -75,14 +75,14 @@
         android:layout_marginTop="1dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:text="@string/c_stu_addbutton"
+        android:text="@string/c_stu_edittext"
         android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/stu_about_layout" />
+        app:layout_constraintTop_toBottomOf="@+id/stu_about_layout_edit" />
 
     <TextView
-        android:id="@+id/stu_add_fname1"
+        android:id="@+id/stu_edit_fname1"
         android:layout_width="111dp"
         android:layout_height="44dp"
         android:layout_marginStart="16dp"
@@ -90,21 +90,21 @@
         android:layout_marginTop="20dp"
         android:text="@string/c_stu_fname"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/stu_add_topic" />
+        app:layout_constraintTop_toBottomOf="@+id/stu_add_topic_edit" />
 
     <EditText
-        android:id="@+id/stu_add_lname2"
+        android:id="@+id/stu_edit_lname2"
         android:layout_width="172dp"
         android:layout_height="44dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBaseline_toBaselineOf="@+id/stu_add_lname1"
-        app:layout_constraintStart_toEndOf="@+id/stu_add_lname1" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/stu_edit_lname1"
+        app:layout_constraintStart_toEndOf="@+id/stu_edit_lname1" />
 
     <TextView
-        android:id="@+id/stu_add_address1"
+        android:id="@+id/stu_edit_address1"
         android:layout_width="111dp"
         android:layout_height="44dp"
         android:layout_marginStart="16dp"
@@ -112,21 +112,21 @@
         android:layout_marginTop="15dp"
         android:text="@string/c_stu_address"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/stu_add_lname1" />
+        app:layout_constraintTop_toBottomOf="@+id/stu_edit_lname1" />
 
     <EditText
-        android:id="@+id/stu_add_address2"
+        android:id="@+id/stu_edit_address2"
         android:layout_width="172dp"
         android:layout_height="44dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:ems="10"
         android:inputType="textPostalAddress"
-        app:layout_constraintBaseline_toBaselineOf="@+id/stu_add_address1"
-        app:layout_constraintStart_toEndOf="@+id/stu_add_address1" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/stu_edit_address1"
+        app:layout_constraintStart_toEndOf="@+id/stu_edit_address1" />
 
     <TextView
-        android:id="@+id/stu_add_gender1"
+        android:id="@+id/stu_edit_gender1"
         android:layout_width="111dp"
         android:layout_height="44dp"
         android:layout_marginStart="16dp"
@@ -134,10 +134,10 @@
         android:layout_marginTop="15dp"
         android:text="@string/c_stu_gender"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/stu_add_address1" />
+        app:layout_constraintTop_toBottomOf="@+id/stu_edit_address1" />
 
     <TextView
-        android:id="@+id/stu_add_number1"
+        android:id="@+id/stu_edit_number1"
         android:layout_width="111dp"
         android:layout_height="44dp"
         android:layout_marginStart="16dp"
@@ -145,21 +145,21 @@
         android:layout_marginTop="15dp"
         android:text="@string/c_stu_number"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/stu_add_gender1" />
+        app:layout_constraintTop_toBottomOf="@+id/stu_edit_gender1" />
 
     <EditText
-        android:id="@+id/stu_add_number2"
+        android:id="@+id/stu_edit_number2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:ems="10"
         android:inputType="phone"
-        app:layout_constraintBaseline_toBaselineOf="@+id/stu_add_number1"
-        app:layout_constraintStart_toEndOf="@+id/stu_add_number1" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/stu_edit_number1"
+        app:layout_constraintStart_toEndOf="@+id/stu_edit_number1" />
 
     <TextView
-        android:id="@+id/stu_add_parent_number1"
+        android:id="@+id/stu_edit_parent_number1"
         android:layout_width="111dp"
         android:layout_height="44dp"
         android:layout_marginStart="16dp"
@@ -168,40 +168,40 @@
         android:text="@string/c_stu_paren_number"
         android:textSize="10sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/stu_add_number1" />
+        app:layout_constraintTop_toBottomOf="@+id/stu_edit_number1" />
 
     <EditText
-        android:id="@+id/stu_add_parent_numbr2"
+        android:id="@+id/stu_edit_parent_numbr2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:ems="10"
         android:inputType="phone"
-        app:layout_constraintBaseline_toBaselineOf="@+id/stu_add_parent_number1"
-        app:layout_constraintStart_toEndOf="@+id/stu_add_parent_number1" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/stu_edit_parent_number1"
+        app:layout_constraintStart_toEndOf="@+id/stu_edit_parent_number1" />
 
     <Button
-        android:id="@+id/stu_add_submit_button"
+        android:id="@+id/stu_edit_submit_button"
         android:layout_width="142dp"
         android:layout_height="57dp"
         android:layout_marginTop="30dp"
-        android:text="@string/c_stu_submitbutton"
+        android:text="@string/c_stu_edittbutton"
         app:backgroundTint="@color/design_default_color_error"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/stu_add_parent_number1" />
+        app:layout_constraintTop_toBottomOf="@+id/stu_edit_parent_number1" />
 
     <EditText
-        android:id="@+id/stu_add_gender2"
+        android:id="@+id/stu_edit_gender2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBaseline_toBaselineOf="@+id/stu_add_gender1"
-        app:layout_constraintStart_toEndOf="@+id/stu_add_gender1" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/stu_edit_gender1"
+        app:layout_constraintStart_toEndOf="@+id/stu_edit_gender1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
