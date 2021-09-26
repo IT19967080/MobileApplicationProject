@@ -7,10 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class TeacherManagement extends AppCompatActivity {
 
-    Button button,button2;
+    Button button1,button2;
+    ImageView back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,17 +22,18 @@ public class TeacherManagement extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_teacher_management);
 
-        button = findViewById(R.id.btn_addteachers);
+        button1 = findViewById(R.id.btn_addt);
         button2=findViewById(R.id.btn_salary);
+        back=findViewById(R.id.teacherback);
 
 
 
-        button.setOnClickListener(new View.OnClickListener(){
+        button1.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v) {
-                Intent c= new Intent(getApplicationContext(),Add_Teacher.class);
-                startActivity(c);
+                Intent intent = new Intent(TeacherManagement.this,Add_Teacher.class);
+                startActivity(intent);
             }
         });
 
@@ -38,14 +41,20 @@ public class TeacherManagement extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent c= new Intent(getApplicationContext(),incomecal.class);
-                startActivity(c);
+                Intent intent = new Intent(TeacherManagement.this,incomecal.class);
+                startActivity(intent);
             }
+
+
         });
 
 
-
-
-
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TeacherManagement.this,MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

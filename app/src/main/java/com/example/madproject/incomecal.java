@@ -2,11 +2,13 @@ package com.example.madproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 public class incomecal extends AppCompatActivity {
 public incomecal(){
@@ -15,6 +17,7 @@ public incomecal(){
 
     EditText ed1,ed2,ed3,ed4;
     Button btn1,btn2;
+    ImageView back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +31,8 @@ public incomecal(){
         ed2 = findViewById(R.id.teacher_sal);
         ed3 = findViewById(R.id.company_profit);
         ed4 = findViewById(R.id.net_sal);
+
+        back=findViewById(R.id.calimg);
 
         btn1 = findViewById(R.id.btnsal_1);
         btn2 = findViewById(R.id.btn_sal2);
@@ -58,7 +63,18 @@ public incomecal(){
             }
         });
 
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(incomecal.this,TeacherManagement.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
+
+
 
      public static double calculateSalary(double salary){
         double company_profit;
