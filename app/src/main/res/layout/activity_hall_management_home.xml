@@ -7,15 +7,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/hall_background"
+    android:background="@drawable/loginback"
     tools:context=".Hall_Management_Home">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/hint"
+        android:layout_height="70dp"
+        android:background="@color/navbar"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,9 +25,9 @@
             android:id="@+id/imageView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="8dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.043"
+            app:layout_constraintHorizontal_bias="0.044"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/backarrow" />
@@ -39,6 +39,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginLeft="10dp"
             android:text="Hall Management"
+            android:textColor="@color/black"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -202,7 +203,7 @@
                     android:id="@+id/c3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/c3" />
+                    android:src="@drawable/g33" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -228,9 +229,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="81dp"
+        android:layout_marginTop="98dp"
         android:text="Hall Management"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout" />

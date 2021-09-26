@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Madproject">
+        <activity android:name=".Hall_TeacherList"></activity>
         <activity android:name=".Hall_Management_Home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,61 +19,35 @@
         </activity>
         <activity
             android:name=".class_payements"
-            android:exported="true">
+            android:exported="true" />
+        <activity android:name=".Hall_Managment" />
+        <activity android:name=".incomecal" />
+        <activity android:name=".Student_Managment" />
+        <activity android:name=".ClassManagement" />
+        <activity android:name=".MainActivity" >
 
         </activity>
-        <activity android:name=".Hall_Managment">
-
-
-        </activity>
-        <activity android:name=".incomecal" ></activity>
-
-        <activity android:name=".Student_Managment"></activity>
-
-        <activity android:name=".ClassManagement">
-
-        </activity>
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".update_teacher">
-
-
-
-        </activity>
+        <activity android:name=".update_teacher" />
         <activity android:name=".Gallery_Home" />
-        <activity android:name=".Welcome_Sign" />
+        <activity android:name=".Welcome_Sign" >
+
+        </activity>
         <activity android:name=".EditHall" />
         <activity android:name=".AddHall" />
-        <activity android:name=".MainActivityHallList"></activity>
+        <activity android:name=".MainActivityHallList" />
         <activity android:name=".view_schedule" />
         <activity android:name=".updateschedule" />
         <activity android:name=".ClassIntroActivity" />
-
-
         <activity android:name=".view_teachers" />
         <activity android:name=".navigationDrawer" />
         <activity android:name=".aboutUs" />
         <activity android:name=".addStudent" />
         <activity android:name=".viewAndDeleteStudent" />
         <activity android:name=".TeacherManagement" />
-
-
-
-
-
-
-
         <activity android:name=".studentProfile" />
-
         <activity android:name=".Registration_page" />
         <activity android:name=".login_page" />
         <activity android:name=".Add_Teacher" />
-
-
-
-
-
-
-
     </application>
 
 </manifest>

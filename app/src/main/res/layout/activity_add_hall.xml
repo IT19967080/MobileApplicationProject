@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/hall_background"
+    android:background="@drawable/loginback"
     tools:context=".AddHall">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_width="420dp"
-        android:layout_height="58dp"
-        android:background="@color/hint"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/navbar"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,6 +25,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginLeft="10dp"
             android:text="Hall Management"
+            android:textColor="@color/black"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -35,9 +36,9 @@
             android:id="@+id/imageView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="8dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.043"
+            app:layout_constraintHorizontal_bias="0.044"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/backarrow" />
@@ -47,9 +48,9 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="108dp"
+        android:layout_marginTop="132dp"
         android:text="Add New Hall"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="40sp"
         android:textStyle="bold"
 
@@ -66,7 +67,7 @@
         android:ems="10"
         android:hint="Enter Hall Id"
         android:inputType="textPersonName"
-        android:textColorHint="@color/hint"
+        android:textColorHint="@color/black"
         android:textSize="20dp"
 
         app:layout_constraintEnd_toEndOf="parent"
@@ -82,9 +83,10 @@
         android:ems="10"
         android:hint="Enter Hall Capacity"
         android:textSize="20dp"
-        android:textColorHint="@color/hint"
 
-        android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -98,7 +100,7 @@
         android:ems="10"
         android:hint="Enter A/C or Non A/C"
         android:textSize="20dp"
-        android:textColorHint="@color/hint"
+        android:textColorHint="@color/black"
 
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
@@ -114,7 +116,7 @@
         android:ems="10"
         android:hint="Enter Hall Manager"
         android:textSize="20dp"
-        android:textColorHint="@color/hint"
+        android:textColorHint="@color/black"
 
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
@@ -130,7 +132,7 @@
         android:ems="10"
         android:hint="Enter Available Teachers"
         android:textSize="20dp"
-        android:textColorHint="@color/hint"
+        android:textColorHint="@color/black"
 
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
@@ -143,16 +145,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="76dp"
+        android:background="@color/navbar"
+
+
         android:text="Add Hall"
-        android:onClick="showToast"
-        android:textColorHint="@color/hint"
-        android:background="@drawable/hall_button"
+
         android:textSize="20dp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_teacher" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_teacher"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
