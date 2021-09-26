@@ -36,7 +36,7 @@ public class ClassIntroActivity extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ClassIntroActivity.this,incomecal.class);
+                Intent intent = new Intent(ClassIntroActivity.this,class_payements.class);
                 startActivity(intent);
             }
         });
