@@ -4,126 +4,176 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/loginback"
+    android:background="@drawable/b8"
     tools:context=".Registration_page">
 
-    <Button
-        android:id="@+id/btn_ksignUp"
-        android:layout_width="149dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="91dp"
-        android:layout_marginLeft="91dp"
-
-
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="102dp"
-        android:layout_marginRight="102dp"
-        android:backgroundTint="@android:color/holo_blue_dark"
-        android:text="Register"
-        android:textAllCaps="false"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/repassword" />
-
-    <EditText
-        android:id="@+id/repassword"
-        android:layout_width="404dp"
-        android:layout_height="57dp"
-        android:layout_below="@+id/imageView"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:hint="Confirm Password"
-        android:textSize="25dp"
+    <TextView
+        android:id="@+id/tv_conpassword"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="216dp"
+        android:layout_marginRight="216dp"
+        android:text="Confirm Password"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="193dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="88dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/reg"
+    <TextView
+        android:id="@+id/tv_username3"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="216dp"
+        android:layout_marginRight="216dp"
+        android:text="User Name"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
-    <EditText
-        android:id="@+id/username"
-        android:layout_width="399dp"
-        android:layout_height="60dp"
-        android:layout_below="@+id/imageView"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:hint="User Name"
-        android:textSize="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <EditText
-        android:id="@+id/email"
-        android:layout_width="399dp"
-        android:layout_height="60dp"
-        android:layout_below="@+id/imageView"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:hint="Enter Email"
-        android:textSize="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username" />
-
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="397dp"
-        android:layout_height="56dp"
-        android:layout_below="@+id/imageView"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:hint="Enter Password"
-        android:textSize="25dp"
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="216dp"
+        android:layout_marginRight="216dp"
+        android:text="Password"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <Button
+        android:id="@+id/btn_ksignUp"
+        android:layout_width="149dp"
+        android:layout_height="53dp"
+
+
+        android:layout_marginTop="28dp"
+
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textColor="#0B0909"
+        app:backgroundTint="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repassword" />
+
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_width="392dp"
+        android:layout_height="45dp"
+
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:hint="Confirm Password"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_conpassword" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="392dp"
+        android:layout_height="45dp"
+
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:hint="Enter User Name"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_username3" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="392dp"
+        android:layout_height="45dp"
+
+
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:hint="Enter Email"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_email" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="392dp"
+        android:layout_height="45dp"
+
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:hint="Enter Password"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_password" />
+
+    <Button
         android:id="@+id/btn_ksignIn"
         android:layout_width="219dp"
         android:layout_height="51dp"
-        android:layout_marginStart="91dp"
-        android:layout_marginLeft="91dp"
 
 
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="102dp"
-        android:layout_marginRight="102dp"
-        android:backgroundTint="@android:color/holo_blue_dark"
+        android:layout_marginTop="12dp"
+
         android:text="Already  User! \n Sign In"
         android:textAllCaps="false"
         android:textSize="13dp"
+        app:backgroundTint="@color/teal_700"
+        android:textColor="#673AB7"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/repassword" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_ksignUp"
+        app:layout_constraintVertical_bias="0.197" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="194dp"
+        android:layout_height="202dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/nilwala2" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="216dp"
+        android:layout_marginRight="216dp"
+        android:text="Email"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

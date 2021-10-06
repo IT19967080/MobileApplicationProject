@@ -55,18 +55,16 @@ public class class_payements extends AppCompatActivity {
     {
         int tot;
 
-        String prodname=classid.getText().toString();
-        int price=Integer.parseInt(classfee.getText().toString());
-        int qty=Integer.parseInt(attendence.getText().toString());
-        tot=tot(price,qty);
+        String ClassId=classid.getText().toString();
+        int ClassFee=Integer.parseInt(classfee.getText().toString());
+        int Attendence=Integer.parseInt(attendence.getText().toString());
+        tot=tot(ClassFee,Attendence);
 
 
-        data.add(prodname);
-        data1.add(String.valueOf(price));
-        data2.add(String.valueOf(qty));
+        data.add(ClassId);
+        data1.add(String.valueOf(ClassFee));
+        data2.add(String.valueOf(Attendence));
         data3.add(String.valueOf(tot));
-
-
 
         TableLayout table=(TableLayout) findViewById(R.id.tb2);
 
@@ -77,21 +75,18 @@ public class class_payements extends AppCompatActivity {
         TextView tbl4=new TextView(this);
 
         String total;
-
         int totalsum=0;
 
         for (int i=0;i<data.size(); i++)
         {
-            String pname=data.get(i);
-            String prc=data1.get(i);
-            String qtyy=data2.get(i);
+            String clid=data.get(i);
+            String clfee=data1.get(i);
+            String clatt=data2.get(i);
             total=data3.get(i);
 
-
-
-            tbl1.setText(pname);
-            tbl2.setText(prc);
-            tbl3.setText(qtyy);
+            tbl1.setText(clid);
+            tbl2.setText(clfee);
+            tbl3.setText(clatt);
             tbl4.setText(total);
 
             totalsum= totalsum+totalsum(Integer.parseInt(data3.get(i).toString()));
@@ -107,15 +102,14 @@ public class class_payements extends AppCompatActivity {
         classfee.setText("");
         attendence.setText("");
         classid.requestFocus();
-
     }
    public static int totalsum(int calc){
         int sum1=0;
         sum1 = sum1+calc;
         return sum1;
     }
-    public static int tot(int price,int qty){
-        return price*qty;
+    public static int tot(int ClassFee,int Attendence){
+        return ClassFee*Attendence;
     }
 
 }

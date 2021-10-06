@@ -13,7 +13,7 @@ import android.widget.Toast;
 public class login_page extends AppCompatActivity {
 
     EditText username,password;
-    Button btn_klogin;
+    Button btn_klogin, btn_ksignUp2;
     DBRegister myDB;
 
     @Override
@@ -24,6 +24,7 @@ public class login_page extends AppCompatActivity {
         username=(EditText) findViewById(R.id.pt_email);
         password=(EditText) findViewById(R.id.pw_pwd);
         btn_klogin=(Button) findViewById(R.id.btn_klogin);
+        btn_ksignUp2=findViewById(R.id.btn_ksignUp2);
 
         myDB=new DBRegister(this);
 
@@ -51,6 +52,17 @@ public class login_page extends AppCompatActivity {
             }
         });
 
+        btn_ksignUp2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Registration_page.class);
+                startActivity(intent);
 
-    }
-}
+            }
+        });
+
+
+
+
+            }
+        }

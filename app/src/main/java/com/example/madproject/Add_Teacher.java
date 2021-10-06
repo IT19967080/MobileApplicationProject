@@ -3,17 +3,20 @@ package com.example.madproject;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class Add_Teacher extends AppCompatActivity {
 
     EditText fullname, contact,subject, nationalid, address;
+    ImageView back;
     Button add,view,edit,delete;
     DBCrud DB;
 
@@ -28,6 +31,8 @@ public class Add_Teacher extends AppCompatActivity {
         subject=findViewById(R.id.pt_ksubject);
         nationalid=findViewById(R.id.pt_kidcard);
         address=findViewById(R.id.pt_kaddress);
+
+        back=findViewById(R.id.imageView5);
 
         add=findViewById(R.id.btn_ksadd);
         view=findViewById(R.id.btn_ksview2);
@@ -106,6 +111,13 @@ public class Add_Teacher extends AppCompatActivity {
                 builder.setTitle("Teacher Details");
                 builder.setMessage(buffer.toString());
                 builder.show();
+            }
+        });
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Add_Teacher.this,TeacherManagement.class);
+                startActivity(intent);
             }
         });
     }
