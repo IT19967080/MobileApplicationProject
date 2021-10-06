@@ -6,7 +6,7 @@ public class StudentModel {
     private long started, finished;
 
 
-    public StudentModel(int id,String fname,String lname,String address,String gender,String pnumber,String parentPnumber,long started, long finished) {
+    public StudentModel(int id,String fname,String lname,String address,String gender,String pnumber,String parentPnumber,long finished ) {
         this.id = id;
         this.fname = fname;
         this.lname = lname;
@@ -14,9 +14,10 @@ public class StudentModel {
         this.gender = gender;
         this.pnumber = pnumber;
         this.parentPnumber = parentPnumber;
-        this.started = started;
         this.finished = finished;
     }
+
+
 
 
     public StudentModel() {

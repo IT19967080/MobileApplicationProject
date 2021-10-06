@@ -14,10 +14,12 @@ public class addStudent extends AppCompatActivity {
     private EditText addFname,addLname,addAddress,addGender,addPnumber,addParentPnumber;
     private Button addButton;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_student);
+
 
         stu_Db = new databaseHelper_Student(this);
         addFname = (EditText) findViewById(R.id.stu_add_fname2);
@@ -37,16 +39,20 @@ public class addStudent extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        boolean isInserted = stu_Db.insertStudent(addFname.getText().toString(),addLname.getText().toString(),
+
+                        Boolean checkinsertdata= stu_Db.insertStudent(addFname.getText().toString(),addLname.getText().toString(),
                                 addAddress.getText().toString(),addGender.getText().toString(),
-                                addPnumber.getText().toString(),addParentPnumber.getText().toString());
-                        if (isInserted = true)
-                            Toast.makeText(addStudent.this,"Student Added",Toast.LENGTH_LONG).show();
+                                addPnumber.getText().toString(),addParentPnumber.getText().toString()
+                        );
+                        if(checkinsertdata==true)
+                            Toast.makeText(addStudent.this, "Student Added", Toast.LENGTH_SHORT).show();
                         else
-                            Toast.makeText(addStudent.this,"Something Went Wrong!",Toast.LENGTH_LONG).show();
+                            Toast.makeText(addStudent.this, "Student Not Added",Toast.LENGTH_SHORT).show();
                     }
                 }
         );
     }
+
+
 
 }

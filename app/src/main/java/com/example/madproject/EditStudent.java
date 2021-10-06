@@ -16,7 +16,6 @@ public class EditStudent extends AppCompatActivity {
     private EditText editFname,editLname,editAddress,editGender,editPnumber,editParentPnumber;
     private Button edit;
     private Context context;
-    private Long updateStu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,9 +54,8 @@ public class EditStudent extends AppCompatActivity {
                 String GenderText= editGender.getText().toString();
                 String NumberText= editPnumber.getText().toString();
                 String ParentNumberText= editParentPnumber.getText().toString();
-                updateStu = System.currentTimeMillis();
 
-                StudentModel studentModel=new StudentModel(Integer.parseInt(id),FnameText,LnameText,AddressText,GenderText,NumberText,ParentNumberText,updateStu,0);
+                StudentModel studentModel=new StudentModel(Integer.parseInt(id),FnameText,LnameText,AddressText,GenderText,NumberText,ParentNumberText,0);
 
                 int state= stu_Db.updateStudent(studentModel);
                 System.out.println(state);

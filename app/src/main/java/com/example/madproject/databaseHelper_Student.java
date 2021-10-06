@@ -83,7 +83,7 @@ public class databaseHelper_Student extends SQLiteOpenHelper {
             do{
                 //create new hall object
                 StudentModel studentModel= new StudentModel();
-
+                studentModel.setStudentId(cursor.getInt(0));
                 studentModel.setStudentFname(cursor.getString(1));
                 studentModel.setStudentLname(cursor.getString(2));
                 studentModel.setStudentAddress(cursor.getString(3));
@@ -100,7 +100,7 @@ public class databaseHelper_Student extends SQLiteOpenHelper {
     }
     // get one student details
     public StudentModel getOneStudentDetails(int id){
-        SQLiteDatabase db = this.getWritableDatabase();
+        SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor cursor=  db.query(TABLE_NAME,new String[]{Col_1,Col_2,Col_3,Col_4,Col_5,Col_6,Col_7},Col_1 + "= ?",new String[]{String.valueOf(id)},null,null,null);
 
@@ -116,15 +116,13 @@ public class databaseHelper_Student extends SQLiteOpenHelper {
                     cursor.getString(4),
                     cursor.getString(5),
                     cursor.getString(6),
-                    cursor.getLong(7),
-                    cursor.getLong(8)
-
-
+                    cursor.getLong(6)
             );
             return studentModel;
         }
         return null;
     }
+
 
     //delete student
     public void deleteStudent(int id){
@@ -146,7 +144,7 @@ public class databaseHelper_Student extends SQLiteOpenHelper {
         contentValues.put(Col_6, studentmodel.getStudentnumber());
         contentValues.put(Col_7, studentmodel.getParentnumber());
 
-        int status= db.update(TABLE_NAME,contentValues, "id =?",new String[]{ String.valueOf(studentmodel.getStudentId())});
+        int status= db.update(TABLE_NAME,contentValues, Col_1 +" =?",new String[]{ String.valueOf(studentmodel.getStudentId())});
 
         db.close();
         return status;
